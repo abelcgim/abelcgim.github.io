@@ -43,3 +43,9 @@ p,span {color: rgb(222, 222, 222);}
   top: 0;
   left: -999999px;
 }
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 50px;
+}
