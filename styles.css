@@ -29,6 +29,7 @@ p,span {color: rgb(222, 222, 222);}
 }
 
 .btnLocation {
+  height: 30px;
   width: 24%;
 }
 
@@ -42,8 +43,15 @@ p,span {color: rgb(222, 222, 222);}
 }
 
 .btnChoice {
-  height: 20px;
+  height: 30px;
   width: auto;
+}
+
+.btnReset {
+  height: 30px;
+  width: auto;
+  position: absolute;
+  right: 20px;
 }
 
 .hide-text {

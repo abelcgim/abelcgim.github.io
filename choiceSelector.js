@@ -1,13 +1,17 @@
-var data = '{"HABITACIÓN":{"initText":"Te tumbas en la cama de tu habitación.","choice1":{"button":"MIRAR MÓVIL","text":"Te han enviado el video de Resistiré por varios grupos de WhatsApp."},"choice2":{"button":"MIRAR PARED","time_incremental":15,"text":"Inspeccionas la pared durante 15 minutos, es una pared blanca ordinaria."}},"VENTANA":{"initText":"Tu piso de mierda no tiene terraza, te asomas a la ventana de tu bajo.","choice1":{"button":"APLAUDIR","text":"Aplaudes hasta que te duelen la manos."}},"BAÑO":{"initText":"Intentas abrir la puerta pero está cerrada. Al inspeccionarla escuchas ruidos que provienen de dentro.","choice1":{"button":"INVESTIGAR RUIDOS","text":"Efectivamente, hay alquien cagando dentro."},"choice2":{"button":"IGNORAR RUIDOS","text":"Decides que lo que este pasando hay dentro no es tan interesante."}},"SALÓN":{"initText":"Estás en tu salón. Entre tus posesiones destaca una TV y una cortina.","choice1":{"button":"VER TV","text":"Esta hablando Pedro Sanchéz, parece que extienden la cuarentena otras dos semanas."},"choice2":{"button":"ABRIR CORTINA","text":"Anda, si estaba aquí la perra."}},"MERCADONA":{"initText":"Lo sentimos, el contenido descargable RETO DE COMPRA EN MERCADONA no está actualmente disponible."},"CALLE":{"initText":"¿Estás seguro de querer salir a la calle? No tienes necesidad.","choice1":{"button":"SALIR","text":""},"choice2":{"button":"NO SALIR","text":"Decides no ser un subnormal que sale a la calle sin motivo."}},"ENCUENTRO CON POLICÍA":{"initText":"Sales a la calle a estirar las piernas, al doblar la esquina te encuentras un policia. ¿Adonde va usted señor?","choice1":{"button":"A PASEAR A LA PERRA","text":""}}}';
+var data = '{"HABITACIÓN":{"initText":"Te tumbas en la cama de tu habitación.","choice1":{"button":"MIRAR MÓVIL","text":"Te han enviado el video de Resistiré por varios grupos de WhatsApp."},"choice2":{"button":"MIRAR PARED","time_incremental":15,"text":"Inspeccionas la pared durante 15 minutos, es una pared blanca ordinaria."}},"VENTANA":{"initText":"Tu piso de mierda no tiene terraza, te asomas a la ventana de tu bajo.","choice1":{"button":"APLAUDIR","text":"Aplaudes hasta que te duelen la manos."}},"BAÑO":{"initText":"Intentas abrir la puerta pero está cerrada. Al inspeccionarla escuchas ruidos que provienen de dentro.","choice1":{"button":"INVESTIGAR RUIDOS","text":"Efectivamente, hay alquien cagando dentro."},"choice2":{"button":"IGNORAR RUIDOS","text":"Decides que lo que este pasando hay dentro no es tan interesante."}},"SALÓN":{"initText":"Estás en tu salón. Entre tus posesiones destaca una TV y una cortina.","choice1":{"button":"VER TV","text":"Esta hablando Pedro Sanchéz, parece que extienden la cuarentena otras dos semanas."},"choice2":{"button":"ABRIR CORTINA","text":"Anda, si estaba aquí la perra."}},"MERCADONA":{"initText":"Lo sentimos, el contenido descargable RETO DE COMPRA EN MERCADONA no está actualmente disponible."},"CALLE":{"initText":"¿Estás seguro de querer salir a la calle? No tienes necesidad.","choice1":{"button":"SALIR","text":""},"choice2":{"button":"NO SALIR","text":"Decides no ser un subnormal que sale a la calle sin motivo."}},"ENCUENTRO CON POLICÍA":{"initText":"Sales a la calle a estirar las piernas, al doblar la esquina te encuentras un policía. ¿Adonde va usted señor?","choice1":{"button":"A PASEAR A LA PERRA","text":""}}}';
 var json = JSON.parse(data);
 var time=new Date(2020,04,12,15,58,0);
-var dogFound=false
-var infractorHabitual=false
+var dogFound=false;
+var infractorHabitual=false;
 var multas=0;
 
 window.onload = function(e){
   document.querySelector(".ui-time-place span").innerText=time.toLocaleString();
 };
+
+function reset() {
+	location.reload();
+}
 
 function replaceAt(string, index, replace) {
   return string.substring(0, index) + replace + string.substring(index + 1);
