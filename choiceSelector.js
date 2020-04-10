@@ -1,9 +1,13 @@
-var data = '{"HABITACIÓN":{"initText":"Te tumbas en la cama de tu habitación.","choice1":{"button":"MIRAR MÓVIL","text":"Te han enviado el video de Resistiré por varios grupos de WhatsApp."},"choice2":{"button":"MIRAR PARED","time_incremental":15,"text":"Inspeccionas la pared durante 15 minutos, es una pared blanca ordinaria."}},"VENTANA":{"initText":"Tu piso de mierda no tiene terraza, te asomas a la ventana de tu bajo.","choice1":{"button":"APLAUDIR","text":"Aplaudes hasta que te duelen la manos."}},"BAÑO":{"initText":"Intentas abrir la puerta pero está cerrada. Al inspeccionarla escuchas ruidos que provienen de dentro.","choice1":{"button":"INVESTIGAR RUIDOS","text":"Efectivamente, hay alquien cagando dentro."},"choice2":{"button":"IGNORAR RUIDOS","text":"Decides que lo que este pasando hay dentro no es tan interesante."}},"SALÓN":{"initText":"Estás en tu salón. Entre tus posesiones destaca una TV y una cortina.","choice1":{"button":"VER TV","text":"Esta hablando Pedro Sanchéz, parece que extienden la cuarentena otras dos semanas."},"choice2":{"button":"ABRIR CORTINA","text":"Anda, si estaba aquí la perra."}},"MERCADONA":{"initText":"Lo sentimos, el contenido descargable RETO DE COMPRA EN MERCADONA no está actualmente disponible."},"CALLE":{"initText":"¿Estás seguro de querer salir a la calle? No tienes necesidad.","choice1":{"button":"SALIR","text":""},"choice2":{"button":"NO SALIR","text":"Decides no ser un subnormal que sale a la calle sin motivo."}},"ENCUENTRO CON POLICÍA":{"initText":"Sales a la calle a estirar las piernas, al doblar la esquina te encuentras un policía. ¿Adonde va usted señor?","choice1":{"button":"A PASEAR A LA PERRA","text":""}}}';
+var data = '{"HABITACIÓN":{"initText":"Te tumbas en la cama de tu habitación.","choice1":{"button":"MIRAR MÓVIL","time_incremental":25,"text":"Miras el móvil durante 25 minutos.<p>Te han enviado el video de Resistiré por varios grupos de WhatsApp.</p>"},"choice2":{"button":"MIRAR PARED","time_incremental":15,"text":"Inspeccionas la pared durante 15 minutos, es una pared blanca ordinaria."}},"VENTANA":{"initText":"Tu piso de mierda no tiene terraza, te asomas a la ventana de tu bajo.","choice1":{"button":"APLAUDIR","text":"El cabrón del balcón de enfrente se te ha vuelto a adelantar, aplaudes durante 5 minutos junto al vecindario."}},"BAÑO":{"initText":"Intentas abrir la puerta pero está cerrada. Al inspeccionarla escuchas ruidos que provienen de dentro.","choice1":{"button":"INVESTIGAR RUIDOS","text":"Efectivamente, hay alquien cagando dentro."},"choice2":{"button":"IGNORAR RUIDOS","text":"Decides que lo que este pasando hay dentro no es tan interesante."}},"SALÓN":{"initText":"Estás en tu salón. Entre tus posesiones destaca una TV y una cortina.","choice1":{"button":"VER TV","time_incremental":5,"text":"Ves la tele durante 5 minutos.<p>Esta hablando Pedro Sanchéz, parece que extienden la cuarentena otras dos semanas.</p>"},"choice2":{"button":"ABRIR CORTINA","text":"Anda, si estaba aquí la perra."}},"COCINA":{"initText":"Estás en tu cocina. Te quedan 10 latas de cerveza, quizás deberias racionarlas.","choice1":{"button":"BEBER CERVEZA","text":"Has bebido X, te quedan Y latas."}},"PASILLO":{"initText":"¿Quien necesita salir a la calle teniendo un pasillo de 2 metros de largo? Te preparas para ejercitar tu cuerpo.","choice1":{"time_incremental":5,"button":"CAMINAR","text":"Caminas de un lado a otro del pasillo. Das 50 vueltas en 5 minutos."},"choice2":{"button":"HACER FLEXIONES","text":"Intentas hacer una flexión, pero desistes."}},"MERCADONA":{"initText":"Lo sentimos, el contenido descargable RETO DE COMPRA EN MERCADONA no está actualmente disponible."},"CALLE":{"initText":"¿Estás seguro de querer salir a la calle? No tienes necesidad.","choice1":{"button":"SALIR","text":""},"choice2":{"button":"NO SALIR","text":"Decides no ser un subnormal que sale a la calle sin motivo."}},"ENCUENTRO CON POLICÍA":{"initText":"Sales a la calle a estirar las piernas, al doblar la esquina te encuentras un policía. ¿Adonde va usted señor?","choice1":{"button":"A PASEAR A LA PERRA","text":""}}}';
 var json = JSON.parse(data);
 var time=new Date(2020,03,12,15,58,0);
 var dogFound=false;
 var infractorHabitual=false;
+var exercise=false;
 var multas=0;
+var beerleft=10
+var beerdrunk=0
+
 
 window.onload = function(e){
   document.querySelector(".ui-time-place span").innerText=time.toLocaleString();
@@ -67,7 +71,7 @@ function choiceSelector(value) {
   	  if (timeHourMinute=="19:58") {
   	  document.querySelector("#text").classList.add("largerText");
   	  modifyAchievements("SOLIDARIDAD");
-  	  textToShow="El cabrón del balcón de enfrente se te ha vuelto a adelantar, aplaudes durante 4 minutos junto al vecindario. <p>LOGRO CONSEGUIDO: SOLIDARIDAD</p>";
+  	  textToShow="El cabrón del balcón de enfrente se te ha vuelto a adelantar, aplaudes durante 5 minutos junto al vecindario. <p>LOGRO CONSEGUIDO: SOLIDARIDAD</p>";
   	  time=new Date(time.getTime() + 5 * 60000);
   	  document.querySelector(".ui-time-place span").innerText=time.toLocaleString();
   	  } else textToShow="...que son las "+timeHourMinute+ ", no las 19:58.";
@@ -78,13 +82,35 @@ function choiceSelector(value) {
   	 document.querySelector(".ui-time-place span").innerText=time.toLocaleString();
   }  
   currentText.innerHTML=textToShow;
+    if (location=="SALÓN" && value=="choice1") {
+  	  json[location][value].text="Ves la tele durante 5 minutos.<p>No parece que el discurso de Pedro Sanchéz vaya a acabar pronto.</p>";
+  }
   if (location=="SALÓN" && value=="choice2" && !dogFound) {
   	 currentText.innerHTML+="<p>PERRA añadida al INVENTARIO</p>";
   	 json[location][value].text="Ya no hay nada aquí.";
   	 modifyInventory("PERRA");
   	 dogFound=true;
   }
-  
+  if (location=="PASILLO" && value=="choice2" && !exercise) {
+  	  currentText.innerHTML+="<p>LOGRO CONSEGUIDO: CUERPOESCOMBRO</p>";
+  	  modifyAchievements("CUERPOESCOMBRO"); 
+  	  exercise=true;
+  }
+  if (location=="COCINA" && value=="choice1") {
+  	  if (beerleft==1) {
+  	  	  currentText.innerHTML="No se que pretendías conseguir pero te has quedado sin cerveza.";
+  	  	  json[location].initText="Hay latas de cerveza vacías desperdigadas por la mesa.";
+  	  	  delete json[location]['choice1'];
+  	  	  document.querySelector("#choice1").style.display = "none";
+  	  	  console.log(json[location]);
+  	  }
+  	  else {
+  	    beerleft--
+  	    beerdrunk++
+  	    currentText.innerHTML=currentText.innerHTML.replace("X", beerdrunk);
+  	    currentText.innerHTML=currentText.innerHTML.replace("Y", beerleft);
+      }
+  }
   if (location=="HABITACIÓN" && value=="choice2") {
   	  json[location][value].text="Inspeccionas la pared durante otros 15 minutos, sigue siendo una pared blanca ordinaria.";
   }
