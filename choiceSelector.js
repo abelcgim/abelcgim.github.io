@@ -6,6 +6,7 @@ var infractorHabitual=false;
 var clapping=false;
 var exercise=false;
 var firstNight=false;
+var bathroomOpen=false;
 var multas=0;
 var beerleft=10
 var beerdrunk=0
@@ -23,6 +24,12 @@ function replaceAt(string, index, replace) {
   return string.substring(0, index) + replace + string.substring(index + 1);
 }
 
+function openBathroom() {
+	json["BAÑO"].initText="Encuentras el baño libre!<p>Mierda, se ha acabado el papel higiénico.</p>";
+	delete json["BAÑO"]["choice1"];
+	delete json["BAÑO"]["choice2"];
+}
+
 function addTime(value) {
 	time=new Date(time.getTime() + value * 60000);
 	if (time.getHours()==0 && time.getUTCDate()==14) {
@@ -32,6 +39,7 @@ function addTime(value) {
       	document.querySelector(".over").style.display = "block";	
 	}
 	else if (time.getHours()==0) {
+		if (!bathroomOpen) openBathroom();
 		document.querySelector(".currentText").innerHTML="Tras un intenso día de cuarentena caes dormido. <p>Te despiertas a la mañana siguiente, desbordado por las infinitas posibilidades de este nuevo día.</p>"
 		if (!firstNight) {
 		  firstNight=true;
