@@ -27,17 +27,19 @@ function addTime(value) {
 	time=new Date(time.getTime() + value * 60000);
 	if (time.getHours()==0 && time.getUTCDate()==14) {
 		document.querySelector(".container").remove();
-      	document.querySelector(".currentTextOver").innerHTML="<p>Tras varios dias sin comer te desmayas. Si hubieras ido al MERCADONA esto no habría pasado...</p><p>¿Dices que no estaba la opción disponible? Mala suerte.</p><p>LOGRO CONSEGUIDO: DESNUTRIDO</p>";
+      	document.querySelector(".currentTextOver").innerHTML="<p>Tras varios dias sin comer te desmayas. Si hubieras ido al MERCADONA esto no habría pasado. ..¿No disponible? Mala suerte.</p><p>LOGRO CONSEGUIDO: DESNUTRIDO</p>";
       	modifyAchievements("DESNUTRIDO");      	    
       	document.querySelector(".over").style.display = "block";	
 	}
 	else if (time.getHours()==0) {
-		document.querySelector(".currentText").innerHTML="Tras un intenso día de cuarentena caes dormido. Te despiertas a la mañana siguiente."
+		document.querySelector(".currentText").innerHTML="Tras un intenso día de cuarentena caes dormido. <p>Te despiertas a la mañana siguiente, desbordado por las infinitas posibilidades de este nuevo día.</p>"
 		if (!firstNight) {
-		firstNight=true;
-		document.querySelector(".currentText").innerHTML+="<p>LOGRO CONSEGUIDO: RUTINA</p>";
-		modifyAchievements("RUTINA");   
+		  firstNight=true;
+		  document.querySelector(".currentText").innerHTML+="<p>LOGRO CONSEGUIDO: RUTINA</p>";
+		  modifyAchievements("RUTINA");   
 		}	
+		document.querySelector("#choice1").style.display = "none";
+		document.querySelector("#choice2").style.display = "none";
 		time=new Date(time.getTime() + 600 * 60000);
 	}
 }
