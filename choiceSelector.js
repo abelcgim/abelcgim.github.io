@@ -27,7 +27,7 @@ function addTime(value) {
 	time=new Date(time.getTime() + value * 60000);
 	if (time.getHours()==0 && time.getUTCDate()==14) {
 		document.querySelector(".container").remove();
-      	document.querySelector(".currentTextOver").innerHTML="<p>Tras varios dias sin comer te desmayas. Si hubieras ido al MERCADONA esto no habría pasado. ..¿No disponible? Mala suerte.</p><p>LOGRO CONSEGUIDO: DESNUTRIDO</p>";
+      	document.querySelector(".currentTextOver").innerHTML="<p>Tras varios dias sin comer te desmayas. Si hubieras ido al MERCADONA esto no habría pasado...¿No disponible? Mala suerte.</p><p>LOGRO CONSEGUIDO: DESNUTRIDO</p>";
       	modifyAchievements("DESNUTRIDO");      	    
       	document.querySelector(".over").style.display = "block";	
 	}
