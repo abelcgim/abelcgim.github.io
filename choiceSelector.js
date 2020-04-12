@@ -163,7 +163,7 @@ function choiceSelector(value) {
   	  	 currentText.innerHTML+="no tienes la PERRA contigo.</p><p>MULTA añadida al INVENTARIO</p>";
   	  }
   	  else {
-  	  	currentText.innerHTML="la PERRA que llevas contigo es de peluche.<p>MULTA añadida al INVENTARIO</p>";
+  	  	currentText.innerHTML+="la PERRA que llevas contigo es de peluche.<p>MULTA añadida al INVENTARIO</p>";
       }
       multas++
       if (multas>9) {
