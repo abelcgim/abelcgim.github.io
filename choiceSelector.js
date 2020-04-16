@@ -38,6 +38,7 @@ function newGamePlus() {
 	document.querySelector(".container").style.display = "block";
 	locationSelector("HABITACIÓN");
 	document.querySelector(".currentText").innerHTML="¿Crees que tengo tiempo de hacer un New Game +?<p>Te dejo como compensación 999 cervezas en la cocina.</p>";
+	document.querySelector(".currentText").classList.add("largerText");
 	beerdrunk=0;
 	beerleft=999;
 	json["COCINA"].initText="Estás en tu cocina. Te quedan 999 latas de cerveza, hora de emborracharse.";
