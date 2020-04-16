@@ -142,7 +142,7 @@ function replaceAt(string, index, replace) {
 function openBathroom() {
 	json["BAÑO"].initText="Encuentras el baño libre!<p>Mierda, se ha acabado el papel higiénico.</p>";
 	json["BAÑO"]["choice1"].button="";
-	delete json["BAÑO"]["choice2"];
+	json["BAÑO"]["choice2"].button="";
 }
 
 function addTime(value) {
