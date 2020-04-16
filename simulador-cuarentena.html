@@ -9,9 +9,10 @@
   <meta name="author" content="Abel Casado Gimeno" />
   <title>Simulador cuarentena | #Quédateencasa</title>
   <link type="text/css" rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/mediaelement/latest/mediaelementplayer.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <script defer src="choiceSelector.js"></script> 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script defer src="choiceSelector.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async="" src="https://www.google-analytics.com/analytics.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163394790-1"></script>
   <script>
@@ -21,6 +22,8 @@
 
     gtag('config', 'UA-163394790-1');
   </script>
+  <script src="jquery-3.5.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/mediaelement/latest/mediaelement-and-player.min.js"></script> 
 </head>
 <body>
   <h1 class="hide-text">Orange: Fibra, Móvil y TV | #Quédateencasa</h1>
@@ -33,7 +36,7 @@
     </div>
     <div class="ui-current-location">
       <span>LOCALIZACIÓN: <span class="current-location">HABITACIÓN</span></span>
-    </div>
+    </div>    
     <div class="ui-locations-top">
       <p>Selector de localización: </p>
       <button class="btnLocation" onclick="locationSelector(this.innerHTML)">Habitación</button>
@@ -66,8 +69,52 @@
         <button class="btnChoice" onclick="reset()">Volver a intentarlo</button>
       </div>
   </div>
+  <div class="ending" style="display: none;">
+      <div class="currentTextOver"><p>Cagas.</p></div>
+	  <p class="gameover"> GOOD ENDING</p>
+      <div class="btn-grid">     
+        <button class="btnChoice" onclick="newGamePlus()">New Game +</button>
+      </div>
+  </div>
+  <div class="final-container hidden">
+      <p>Canción: Running in the 90's:</p>
+	  <div class="music-player">
+	     <audio width="auto" id="player" controls>
+	        <source src="https://www.youtube.com/watch?v=BJ0xBCwkg3E" type="video/x-youtube">
+	    </audio>
+	  </div>
+	  <div class="runText">
+	    <p>PORCENTAJE COMPLETADO: <span class="current-porcentage">0</span>%</p>
+	    <p class="instructions">Pulsa repetidamente en CORRER!</p>
+	    <span class="event1 hidden">Joder tío estás mayor. Haces una parada técnica de 15 segundos para recuperar el aliento.</span>
+	    <span class="event2 hidden">Ahhhhhhhhhh un tirón en la pierna! Tu velocidad se ha reducido a una cuarta parte.</span>
+	    <span class="event3 hidden">Pulsa el PAPEL HIGIÉNICO para recogerlo!</span>
+	    <div class="event4 hidden">
+	      <span>Has obtenido el OBJETO CLAVE: PAPEL HIGIÉNICO.</span>
+	      <p>Se desbloquea la salida del MERCADONA.</p>
+	    </div>
+	  </div>
+	  <div class="btn-grid">     
+	    <button class="btnCountdown hidden">10</button>
+        <button class="btnRun" onclick="run()">CORRER</button>
+        <button class="btnExit hidden" onclick="exitClick()">SALIR</button>
+      </div>
+      <div class="character1 nomargins">
+	    <p> O<br></p>
+	    <p>/|\<br></p>
+	    <p>/ \<br></p>
+	  </div>
+	  <div class="toilet-paper-container">
+	    <img class="toilet-paper" onclick="toiletClick()" src="data:," title="Treasure" alt="Treasure">
+	  </div>
+  </div>
 <footer>
+
  <div class="achievements bottom">
+     <div class="ui-secret-inventory
+      hidden">
+      <span>OBJETO CLAVE: <span class="current-key-item">PAPEL HIGIÉNICO</span></span>
+    </div>
     <span>LOGROS: <span class="current-achiev">NINGUNO</span></span>
  </div>
 </footer>

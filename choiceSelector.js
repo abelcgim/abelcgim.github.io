@@ -1,5 +1,5 @@
 //Deja de mirar el javascript, tramposo.
-var data = '{"HABITACIÓN":{"initText":"Te tumbas en la cama de tu habitación.","choice1":{"button":"MIRAR MÓVIL","time_incremental":25,"text1":"Miras el móvil durante 25 minutos.<p>Notificaciones WhatsApp: Videos de Resistiré por varios grupos.</p>","text2":"Miras el móvil durante 25 minutos.<p>Notificaciones WhatsApp: Videos con los africanos del ataúd.</p>","text3":"Miras el móvil durante 25 minutos.<p>Notificaciones WhatsApp: Memes varios del coronavirus.</p>","text4":"Miras el móvil durante 25 minutos.<p>Notificaciones WhatsApp: Videos de gente pillada saltándose la cuarentena.</p>","text5":"Miras el móvil durante 25 minutos.<p>Notificaciones WhatsApp: Bulos del desescalado del confinamiento.</p>"},"choice2":{"button":"MIRAR PARED","time_incremental":15,"text":"Inspeccionas la pared durante 15 minutos, es una pared blanca ordinaria."}},"VENTANA":{"initText":"Tu piso de mierda no tiene terraza, te asomas a la ventana de tu bajo.","choice1":{"button":"APLAUDIR","text":"El cabrón del balcón de enfrente se te ha vuelto a adelantar, aplaudes durante 5 minutos junto al vecindario."},"choice2":{"button":"OBSERVAR LA CALLE","text":"No se oye ni un ruido."}},"BAÑO":{"initText":"Intentas abrir la puerta pero está cerrada. Al inspeccionarla escuchas ruidos que provienen de dentro.","choice1":{"button":"INVESTIGAR RUIDOS","text":"Efectivamente, hay alquien cagando dentro."},"choice2":{"button":"IGNORAR RUIDOS","text":"Decides que lo que este pasando hay dentro no es tan interesante."}},"SALÓN":{"initText":"Estás en tu salón. Entre tus posesiones destaca una TV y una cortina.","choice1":{"button":"VER TV","time_incremental":10,"text":"Ves la tele durante 10 minutos.<p>Esta hablando Pedro Sanchéz, parece que extienden la cuarentena otras dos semanas.</p>"},"choice2":{"button":"ABRIR CORTINA","text":"Anda, si estaba aquí la perra."}},"COCINA":{"initText":"Estás en tu cocina. Te quedan 10 latas de cerveza, quizás deberias racionarlas.","choice1":{"button":"BEBER CERVEZA","text":"Has bebido X, te quedan Y latas."}},"PASILLO":{"initText":"¿Quien necesita salir a la calle teniendo un pasillo de 2 metros de largo? Te preparas para ejercitar tu cuerpo.","choice1":{"time_incremental":5,"button":"CAMINAR","text":"Caminas de un lado a otro del pasillo. Das 50 vueltas en 5 minutos."},"choice2":{"button":"HACER FLEXIONES","text":"Intentas hacer una flexión, pero desistes."}},"MERCADONA":{"initText":"Lo sentimos, el contenido descargable RETO DE COMPRA EN MERCADONA no está actualmente disponible."},"CALLE":{"initText":"¿Estás seguro de querer salir a la calle? No tienes necesidad.","choice1":{"button":"SALIR","text":""},"choice2":{"button":"NO SALIR","text":"Decides no ser un subnormal que sale a la calle sin motivo."}},"ENCUENTRO CON POLICÍA":{"initText":"Sales a la calle a estirar las piernas, al doblar la esquina te encuentras un policía. ¿Adónde va usted señor?","choice1":{"button":"A PASEAR A LA PERRA","text":""},"choice2":{"button":"A SACAR LA BASURA","text":""}}}';
+var data = '{"HABITACIÓN":{"initText":"Te tumbas en la cama de tu habitación.","choice1":{"button":"MIRAR MÓVIL","time_incremental":25,"text1":"Miras el móvil durante 25 minutos.<p>Notificaciones WhatsApp: Videos de Resistiré por varios grupos.</p>","text2":"Miras el móvil durante 25 minutos.<p>Notificaciones WhatsApp: Videos con los africanos del ataúd.</p>","text3":"Miras el móvil durante 25 minutos.<p>Notificaciones WhatsApp: Memes varios del coronavirus.</p>","text4":"Miras el móvil durante 25 minutos.<p>Notificaciones WhatsApp: Videos de gente pillada saltándose la cuarentena.</p>","text5":"Miras el móvil durante 25 minutos.<p>Notificaciones WhatsApp: Bulos del desescalado del confinamiento.</p>"},"choice2":{"button":"MIRAR PARED","time_incremental":15,"text":"Inspeccionas la pared durante 15 minutos, es una pared blanca ordinaria."}},"VENTANA":{"initText":"Tu piso de mierda no tiene terraza, te asomas a la ventana de tu bajo.","choice1":{"button":"APLAUDIR","text":"El cabrón del balcón de enfrente se te ha vuelto a adelantar, aplaudes durante 5 minutos junto al vecindario."},"choice2":{"button":"OBSERVAR LA CALLE","text":"No se oye ni un ruido."}},"BAÑO":{"initText":"Intentas abrir la puerta pero está cerrada. Al inspeccionarla escuchas ruidos que provienen de dentro.","choice1":{"button":"INVESTIGAR RUIDOS","text":"Efectivamente, hay alquien cagando dentro."},"choice2":{"button":"IGNORAR RUIDOS","text":"Decides que lo que este pasando hay dentro no es tan interesante."}},"SALÓN":{"initText":"Estás en tu salón. Entre tus posesiones destaca una TV y una cortina.","choice1":{"button":"VER TV","time_incremental":10,"text":"Ves la tele durante 10 minutos.<p>Esta hablando Pedro Sanchéz, parece que extienden la cuarentena otras dos semanas.</p>"},"choice2":{"button":"ABRIR CORTINA","text":"Anda, si estaba aquí la perra."}},"COCINA":{"initText":"Estás en tu cocina. Te quedan 10 latas de cerveza, quizás deberias racionarlas.","choice1":{"button":"BEBER CERVEZA","text":"Has bebido X, te quedan Y latas."}},"PASILLO":{"initText":"¿Quien necesita salir a la calle teniendo un pasillo de 2 metros de largo? Te preparas para ejercitar tu cuerpo.","choice1":{"time_incremental":5,"button":"CAMINAR","text":"Caminas de un lado a otro del pasillo. Das 50 vueltas en 5 minutos."},"choice2":{"button":"HACER FLEXIONES","text":"Intentas hacer una flexión, pero desistes."}},"MERCADONA":{"initText":"Necesitas demostrar tu valía antes de poder afrontar el RETO DE COMPRA EN MERCADONA.<p>Vuelve cuando hayas conseguido 4 LOGROS.</p>","choice1":{"button":"","text":""}},"PASILLO MERCADONA":{"initText":"<p>Entras y las puertas del MERCADONA se cierran tras de ti, dejandóte atrapado.</p><p>Lo ves a la distancia. El último rollo de PAPEL HIGIÉNICO.</p>","choice1":{"button":"A POR ÉL","text":""}},"FINAL CHALLENGE":{"initText":"<p>De repente ves a otra persona mirando el mismo rollo.</p><p>Tu archienemigo, el cabrón del balcón de enfrente.</p>","choice1":{"button":"ADELANTATE!","text":""}},"CALLE":{"initText":"¿Estás seguro de querer salir a la calle? No tienes necesidad.","choice1":{"button":"SALIR","text":""},"choice2":{"button":"NO SALIR","text":"Decides no ser un subnormal que sale a la calle sin motivo."}},"ENCUENTRO CON POLICÍA":{"initText":"Sales a la calle a estirar las piernas, al doblar la esquina te encuentras un policía. ¿Adónde va usted señor?","choice1":{"button":"A PASEAR A LA PERRA","text":""},"choice2":{"button":"A SACAR LA BASURA","text":""}}}';
 var json = JSON.parse(data);
 var time=new Date(2020,03,12,15,03);
 var dogFound=false;
@@ -11,14 +11,123 @@ var bathroomOpen=false;
 var multas=0;
 var beerleft=10
 var beerdrunk=0
+var achievements=0
+var runCounter=0
+var currentPercentage=0
+var divisor=5
+var countdowninprogress=false;
+var exitmercadona=false;
 
 
 window.onload = function(e){
   document.querySelector(".ui-time-place span").innerText=time.toLocaleString();
 };
 
+function toiletClick() {
+	document.querySelector(".toilet-paper-container").style.display = 'none';
+	document.querySelector('.event3').classList.add("hidden");
+	document.querySelector('.event4').classList.remove("hidden");
+	document.querySelector('.btnExit').classList.remove("hidden");
+	document.querySelector('.ui-secret-inventory').classList.remove("hidden");
+}
+
+function newGamePlus() {
+    document.querySelector('.ui-secret-inventory').classList.add("hidden");
+	document.querySelector(".ending").style.display = "none";
+	document.querySelector(".container").style.display = "block";
+	locationSelector("HABITACIÓN");
+	document.querySelector(".currentText").innerHTML="¿Crees que tengo tiempo de hacer un New Game +?<p>Te dejo como compensación 999 cervezas en la cocina.</p>";
+	beerdrunk=0;
+	beerleft=999;
+	json["COCINA"].initText="Estás en tu cocina. Te quedan 999 latas de cerveza, hora de emborracharse.";
+	json["COCINA"].choice1.button="BEBER CERVEZA";
+	json["BAÑO"].initText="Ya has cumplido tu misión aquí.";
+	delete json["BAÑO"]["choice1"];
+}
+
+function exitClick() {
+	document.querySelector("#player").pause();
+	document.querySelector(".final-container").remove();
+	locationSelector("HABITACIÓN");
+	document.querySelector(".container").style.display="block";
+	document.querySelector(".ui-locations-top").style.display = "block";
+    document.querySelector(".ui-locations-bottom").style.display = "block";
+    document.querySelector(".bottom").style.display = 'block';
+    document.querySelector(".currentText").innerHTML="Vuelves del MERCADONA. <p>Con las prisas se te ha olvidado comprar comida.</p>";
+    json["BAÑO"].initText="Sabes lo que tienes que hacer, estás preparado.";
+    json["BAÑO"].choice1.button="CAGAR";
+    json["BAÑO"].choice1.text="Cagas.";
+    json["BAÑO"].choice2.button="";
+    json["MERCADONA"].initText="Están reponiendo el stock.";
+    exitmercadona=true;
+}
+
+function run() {
+	runCounter++;
+	if (runCounter == 50) {
+      document.querySelector('.event1').classList.remove("hidden");
+      document.querySelector('.btnCountdown').classList.remove("hidden");
+      document.querySelector('.btnRun').classList.add("hidden");
+      for (let i = 14; i >= 0; i--) {
+	      setTimeout(function() { 
+	      document.querySelector(".btnCountdown").innerText=i;	      
+	      if (i==0) {
+	      	 document.querySelector('.event1').classList.add("hidden");
+	      	 document.querySelector('.btnCountdown').classList.add("hidden");
+	      	 document.querySelector('.btnRun').classList.remove("hidden");
+          }     
+	      }, (15-i)*1000);
+      }
+      
+	}
+    if (runCounter == 80) {
+      document.querySelector('.event2').classList.remove("hidden");
+      divisor=15;
+	}
+	if (runCounter == 138) {
+      document.querySelector('.event2').classList.add("hidden");
+      document.querySelector('.event3').classList.remove("hidden");
+      document.querySelector('.instructions').classList.add("hidden");
+      document.querySelector('.btnRun').classList.add("hidden");
+      document.querySelector('.toilet-paper-container').classList.add("moving");
+	}
+	if (runCounter % divisor === 0) {
+	  var br = document.createElement('br');
+	  document.querySelector(".character1").prepend(br);
+	}
+	if (divisor==15 && runCounter>80) {
+	 if (runCounter % 3==0) currentPercentage+=1;
+	} else currentPercentage+=1;
+	document.querySelector(".current-porcentage").innerText=currentPercentage;
+}
+
 function reset() {
 	location.reload();
+}
+
+function mercadona(value) {
+	document.querySelector(".currentText").innerHTML="El día soñado ha llegado, las puertas del MERCADONA se abren ante ti.<p>Pero hay cola por protocolo de seguridad, espera a tu turno.</p>"
+	$('audio').mediaelementplayer();
+	document.querySelector(".toilet-paper").src="toiletpaper.png";	
+    document.querySelector("#choice1").innerText="10";
+	document.querySelector("#choice1").style.display="block";
+	document.querySelector("#choice2").style.display = "none";
+	document.querySelector("#choice2").style.display = "none";
+	countdowninprogress=true;
+	document.querySelector("#choice1").removeAttribute("onclick");
+    for (let i = 9; i >= 0; i--) {
+      setTimeout(function() { 
+      document.querySelector("#choice1").innerText=i;
+      if (i==0) {
+        countdowninprogress=false;
+        locationSelector("PASILLO MERCADONA");
+        document.querySelector("#choice1").setAttribute("onclick", "choiceSelector(this.id)");
+        document.querySelector(".ui-locations-top").style.display = "none";
+        document.querySelector(".ui-locations-bottom").style.display = "none";
+      }
+      }, (10-i)*1000);
+    }
+    
 }
 
 function replaceAt(string, index, replace) {
@@ -35,7 +144,12 @@ function addTime(value) {
 	time=new Date(time.getTime() + value * 60000);
 	if (time.getHours()==0 && time.getUTCDate()==14) {
 		document.querySelector(".container").remove();
-      	document.querySelector(".currentTextOver").innerHTML="<p>Tras varios dias sin comer te desmayas. Si hubieras ido al MERCADONA esto no habría pasado...¿No disponible? Mala suerte.</p><p>LOGRO CONSEGUIDO: DESNUTRIDO</p>";
+      	if (!exitmercadona) {
+      		document.querySelector(".currentTextOver").innerHTML+="<p>Tras varios dias sin comer te desmayas. Si hubieras ido al MERCADONA esto no habría pasado...¿No disponible? Mala suerte.</p>"
+      	} else {
+      		document.querySelector(".currentTextOver").innerHTML+="<p>Tras varios dias sin comer te desmayas. Si te hubieras acordado de comprar comida en MERCADONA esto no habría pasado...</p>";
+      	}
+      	document.querySelector(".currentTextOver").innerHTML+="<p>LOGRO CONSEGUIDO: DESNUTRIDO</p>";
       	modifyAchievements("DESNUTRIDO");      	    
       	document.querySelector(".over").style.display = "block";	
 	}
@@ -69,26 +183,38 @@ function modifyAchievements(value) {
 	if (text.indexOf("NINGUNO")==0) {
 		document.querySelector(".current-achiev").innerText=value;
 	} else document.querySelector(".current-achiev").innerText+=", "+value;
+	achievements++;
 }
 
 function locationSelector(value) {
-  document.querySelector("#text").classList.remove("largerText");
-  if (value=="Terraza") {
-  	  value="Ventana";
+  if (!countdowninprogress) {
+	  document.querySelector("#text").classList.remove("largerText");
+	  if (value=="Terraza") {
+	  	  value="Ventana";
+	  }
+	  document.querySelector(".current-location").innerText=value.toUpperCase();
+	  var currentText=document.querySelector(".currentText");
+	  currentText.innerHTML=json[value.toUpperCase()].initText; 
+	  var choice1=json[value.toUpperCase()].choice1;
+	  var choice2=json[value.toUpperCase()].choice2;
+	  if (choice1!=undefined && choice1.button!="") {
+	      var button1=json[value.toUpperCase()].choice1.button;
+	  	  document.querySelector("#choice1").innerText=button1;
+	  	  document.querySelector("#choice1").style.display = "block";
+	  } else  document.querySelector("#choice1").style.display = "none";
+	  if (choice2!=undefined && choice2.button!="") {
+	  	  var button2=json[value.toUpperCase()].choice2.button;
+	  	  document.querySelector("#choice2").innerText=button2;
+	  	  document.querySelector("#choice2").style.display = "block";
+	  } else  document.querySelector("#choice2").style.display = "none";
+  } else document.querySelector(".currentText").innerHTML="He dicho que esperes a tu turno, no te muevas coño."
+  if (value=="Mercadona" && achievements==1 && !countdowninprogress && !exitmercadona) {
+  	  document.querySelector("#text").classList.add("largerText");
+  	  mercadona(value);
   }
-  document.querySelector(".current-location").innerText=value.toUpperCase();
-  var currentText=document.querySelector(".currentText");
-  currentText.innerHTML=json[value.toUpperCase()].initText; 
-  if (json[value.toUpperCase()].choice1!=undefined) {
-      var button1=json[value.toUpperCase()].choice1.button;
-  	  document.querySelector("#choice1").innerText=button1;
-  	  document.querySelector("#choice1").style.display = "block";
-  } else  document.querySelector("#choice1").style.display = "none";
-  if (json[value.toUpperCase()].choice2!=undefined) {
-  	  var button2=json[value.toUpperCase()].choice2.button;
-  	  document.querySelector("#choice2").innerText=button2;
-  	  document.querySelector("#choice2").style.display = "block";
-  } else  document.querySelector("#choice2").style.display = "none";
+  if (value=="FINAL CHALLENGE") {
+   	  document.querySelector("#text").classList.add("largerText");
+  }
 
 }
 
@@ -98,6 +224,20 @@ function choiceSelector(value) {
   var location=document.querySelector(".current-location").innerText;
   var currentText=document.querySelector(".currentText");
   currentText.innerHTML=json[location][value].text;
+  if (location=="BAÑO" && value=="choice1" && !document.querySelector(".ui-secret-inventory").classList.contains("hidden")) {
+  	  document.querySelector('.ui-secret-inventory').classList.remove("hidden");
+  	  document.querySelector(".container").style.display = "none";
+  	  document.querySelector(".ending").style.display = "block";
+  }
+  if (location=="PASILLO MERCADONA" && value=="choice1") {
+  	  locationSelector("FINAL CHALLENGE");
+  } 
+  if (location=="FINAL CHALLENGE" && value=="choice1") {
+  	  document.querySelector(".container").style.display = 'none';
+  	  document.querySelector(".bottom").style.display = 'none';
+  	  document.querySelector(".final-container").classList.remove("hidden");
+  	  document.querySelector("#player").play();
+  }
   if (location=="VENTANA") {
   	  var timeHourMinute=time.getHours()+":"+String(time.getMinutes()).padStart(2, "0");
   	  if (timeHourMinute=="19:58" && value=="choice1") {
@@ -133,13 +273,16 @@ function choiceSelector(value) {
   	  if (beerleft==1) {
   	  	  currentText.innerHTML="No se que pretendías conseguir pero te has quedado sin cerveza.";
   	  	  json[location].initText="Hay latas de cerveza vacías desperdigadas por la mesa.<p>Ya no te quedan bolsas de basura para recogerlas.</p>";
-  	  	  delete json[location][value];
+  	  	  json[location][value].button="";
   	  	  document.querySelector("#choice1").style.display = "none";
   	  }
   	  else {
   	    beerleft--
   	    beerdrunk++
-  	    json[location].initText="Estás en tu cocina. Te quedan "+beerleft+" latas de cerveza, quizás deberias racionarlas."
+  	    json[location].initText="Estás en tu cocina. Te quedan "+beerleft+" latas de cerveza"
+  	    if (beerleft>10) {
+  	    	json[location].initText+=", hora de emborracharse.";
+  	    } else json[location].initText+=", quizás deberias racionarlas.";
   	    currentText.innerHTML=currentText.innerHTML.replace("X", beerdrunk);
   	    currentText.innerHTML=currentText.innerHTML.replace("Y", beerleft);
       }
