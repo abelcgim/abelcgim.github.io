@@ -27,6 +27,7 @@ function toiletClick() {
 	document.querySelector(".toilet-paper-container").style.display = 'none';
 	document.querySelector('.event3').classList.add("hidden");
 	document.querySelector('.event4').classList.remove("hidden");
+	document.querySelector('.runText').classList.add("auto");
 	document.querySelector('.btnExit').classList.remove("hidden");
 	document.querySelector('.ui-secret-inventory').classList.remove("hidden");
 }
@@ -87,7 +88,7 @@ function run() {
 	if (runCounter == 138) {
       document.querySelector('.event2').classList.add("hidden");
       document.querySelector('.event3').classList.remove("hidden");
-      document.querySelector('.instructions').classList.add("hidden");
+      //document.querySelector('.instructions').classList.add("hidden");
       document.querySelector('.btnRun').classList.add("hidden");
       document.querySelector('.toilet-paper-container').classList.add("moving");
 	}
@@ -121,6 +122,7 @@ function mercadona(value) {
       if (i==0) {
         countdowninprogress=false;
         locationSelector("PASILLO MERCADONA");
+        document.querySelector("#text").classList.add("largerText");
         document.querySelector("#choice1").setAttribute("onclick", "choiceSelector(this.id)");
         document.querySelector(".ui-locations-top").style.display = "none";
         document.querySelector(".ui-locations-bottom").style.display = "none";

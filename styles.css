@@ -8,7 +8,7 @@ body {background-color: black;}
 
 .runText {
   color: rgb(222, 222, 222);
-  height: 100px;
+  height: 70px;
 }
 
 .currentText.largerText {
@@ -125,6 +125,10 @@ p,span {color: rgb(222, 222, 222);}
     to {
         left: 90%;
     }
+}
+
+.auto {
+  height: auto;
 }
 
 .bottom {
