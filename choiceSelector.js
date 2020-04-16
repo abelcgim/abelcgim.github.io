@@ -83,7 +83,7 @@ function run() {
 	}
     if (runCounter == 80) {
       document.querySelector('.event2').classList.remove("hidden");
-      divisor=15;
+      divisor=20;
 	}
 	if (runCounter == 138) {
       document.querySelector('.event2').classList.add("hidden");
@@ -92,11 +92,11 @@ function run() {
       document.querySelector('.btnRun').classList.add("hidden");
       document.querySelector('.toilet-paper-container').classList.add("moving");
 	}
-	if (runCounter % divisor === 0) {
+	if (runCounter % (divisor) === 0) {
 	  var br = document.createElement('br');
 	  document.querySelector(".character1").prepend(br);
 	}
-	if (divisor==15 && runCounter>80) {
+	if (divisor==20 && runCounter>80) {
 	 if (runCounter % 3==0) currentPercentage+=1;
 	} else currentPercentage+=1;
 	document.querySelector(".current-porcentage").innerText=currentPercentage;
