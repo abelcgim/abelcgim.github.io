@@ -213,7 +213,7 @@ function locationSelector(value) {
 	  	  document.querySelector("#choice2").style.display = "block";
 	  } else  document.querySelector("#choice2").style.display = "none";
   } else document.querySelector(".currentText").innerHTML="He dicho que esperes a tu turno, no te muevas coño."
-  if (value=="Mercadona" && achievements==1 && !countdowninprogress && !exitmercadona) {
+  if (value=="Mercadona" && achievements==4 && !countdowninprogress && !exitmercadona) {
   	  document.querySelector("#text").classList.add("largerText");
   	  mercadona(value);
   }
