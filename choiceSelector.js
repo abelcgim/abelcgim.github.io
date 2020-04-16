@@ -14,7 +14,7 @@ var beerdrunk=0
 var achievements=0
 var runCounter=0
 var currentPercentage=0
-var divisor=5
+var divisor=10
 var countdowninprogress=false;
 var exitmercadona=false;
 
@@ -92,7 +92,9 @@ function run() {
       document.querySelector('.btnRun').classList.add("hidden");
       document.querySelector('.toilet-paper-container').classList.add("moving");
 	}
-	if (runCounter % (divisor) === 0) {
+	console.log("counter"+runCounter);
+	console.log("divisor"+divisor);
+	if (runCounter % (divisor) === 0 || runCounter==137) {
 	  var br = document.createElement('br');
 	  document.querySelector(".character1").prepend(br);
 	}
