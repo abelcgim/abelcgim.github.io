@@ -93,8 +93,6 @@ function run() {
       document.querySelector('.btnRun').classList.add("hidden");
       document.querySelector('.toilet-paper-container').classList.add("moving");
 	}
-	console.log("counter"+runCounter);
-	console.log("divisor"+divisor);
 	if (runCounter % (divisor) === 0 || runCounter==137) {
 	  var br = document.createElement('br');
 	  document.querySelector(".character1").prepend(br);
