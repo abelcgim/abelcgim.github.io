@@ -25,12 +25,14 @@ window.onload = function(e){
 };
 
 function toiletClick() {
-	document.querySelector(".toilet-paper-container").style.display = 'none';
-	document.querySelector('.event3').classList.add("hidden");
-	document.querySelector('.event4').classList.remove("hidden");
-	document.querySelector('.runText').classList.add("auto");
-	document.querySelector('.btnExit').classList.remove("hidden");
-	document.querySelector('.ui-secret-inventory').classList.remove("hidden");
+	if (!document.querySelector('.event3').classList.contains("hidden")) {
+	  document.querySelector(".toilet-paper-container").style.display = 'none';
+	  document.querySelector('.event3').classList.add("hidden");
+	  document.querySelector('.event4').classList.remove("hidden");
+	  document.querySelector('.runText').classList.add("auto");
+	  document.querySelector('.btnExit').classList.remove("hidden");
+	  document.querySelector('.ui-secret-inventory').classList.remove("hidden");
+    }
 }
 
 function newGamePlus() {
