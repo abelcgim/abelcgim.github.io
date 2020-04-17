@@ -17,6 +17,7 @@ var currentPercentage=0
 var divisor=10
 var countdowninprogress=false;
 var exitmercadona=false;
+var newgameplus=false;
 
 
 window.onload = function(e){
@@ -41,10 +42,11 @@ function newGamePlus() {
 	document.querySelector(".currentText").classList.add("largerText");
 	beerdrunk=0;
 	beerleft=999;
+	newgameplus=true;
 	json["COCINA"].initText="Estás en tu cocina. Te quedan 999 latas de cerveza, hora de emborracharse.";
 	json["COCINA"].choice1.button="BEBER CERVEZA";
 	json["BAÑO"].initText="Ya has cumplido tu misión aquí.";
-	delete json["BAÑO"]["choice1"];
+	json["BAÑO"]["choice1"].button="";
 }
 
 function exitClick() {
@@ -141,6 +143,7 @@ function openBathroom() {
 	json["BAÑO"].initText="Encuentras el baño libre!<p>Mierda, se ha acabado el papel higiénico.</p>";
 	json["BAÑO"]["choice1"].button="";
 	json["BAÑO"]["choice2"].button="";
+	bathroomOpen=true;
 }
 
 function addTime(value) {
@@ -274,7 +277,16 @@ function choiceSelector(value) {
   }
   if (location=="COCINA" && value=="choice1") {
   	  if (beerleft==1) {
-  	  	  currentText.innerHTML="No se que pretendías conseguir pero te has quedado sin cerveza.";
+  	  	  if (!newgameplus) {
+  	  	    currentText.innerHTML="No se que pretendías conseguir pero te has quedado sin cerveza.";
+  	      } else {
+  	        currentText.innerHTML="Pillas tal borrachera que se te olvidan todos los logros obtenidos.<p>LOGRO CONSEGUIDO: BLACKOUT</p>";
+  	        infractorHabitual=false;
+            clapping=false;
+            firstNight=false;
+            exercise=false;
+            document.querySelector(".current-achiev").innerText="BLACKOUT";
+  	      }
   	  	  json[location].initText="Hay latas de cerveza vacías desperdigadas por la mesa.<p>Ya no te quedan bolsas de basura para recogerlas.</p>";
   	  	  json[location][value].button="";
   	  	  document.querySelector("#choice1").style.display = "none";
