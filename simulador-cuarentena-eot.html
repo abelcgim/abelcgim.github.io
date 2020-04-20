@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Disfruta en esta simulación una experiencia realista de guardar la cuarentena en casa ante el coronavirus.">
+  <meta name="keywords" content="coronavirus, cuarentena, atrapado casa, confinamiento, aventura texto, juego navegador, simulador, pandemia, goty 2020">
+  <meta name="author" content="Abel Casado Gimeno" />
+  <title>Simulador cuarentena | #Quédateencasa</title>
+  <link type="text/css" rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/mediaelement/latest/mediaelementplayer.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script defer src="endOfTime.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163394790-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163394790-1');
+  </script>
+  <script src="jquery-3.5.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/mediaelement/latest/mediaelement-and-player.min.js"></script> 
+</head>
+<body>
+  <h1 class="hide-text">Orange: Fibra, Móvil y TV | #Quédateencasa</h1>
+    <div class="final-container">
+	  <div class="music-player">
+	     <audio width="auto" id="player" controls>
+	        <source src="https://www.youtube.com/watch?v=Tcf_FBbIRpM" type="video/x-youtube">
+	    </audio>
+	  </div>
+   </div>
+   <div class="container">  
+    <p>Bienvenido al Fin del Tiempo.</p>
+    <p>Todos los periodos de tiempo conectan aquí...</p>
+    <div class="btn-grid">
+        <button class="btnChoice" onclick="$(this).remove();">1 AC (Antes de Coronavirus)</button>
+    </div>
+    <div class="btn-grid">
+        <button class="btnChoice" onclick="$(this).remove();">El día de la Cuarentena</button>
+    </div>
+    <div class="btn-grid">
+        <button class="btnChoice" onclick="window.location='./simulador-cuarentena.html';">12 de abril de 2020</button>
+    </div>
+     <div class="btn-grid">
+        <button class="btnChoice" onclick="$(this).remove();">27 de abril de 2020</button>
+    </div>
+  </div>
+
+</body>
+</html>
