@@ -331,7 +331,6 @@ function choiceSelector(value) {
       	    document.querySelector(".currentTextOver").innerHTML="<p>Tras multarte 10 veces el policía se harta y te manda a la cárcel. Deberías haberlo visto venir...</p><p>LOGRO CONSEGUIDO: CONDENADO</p>";
       	    modifyAchievements("CONDENADO");      	    
       	    document.querySelector(".over").style.display = "block";
-      	    
       }	  
       else if (multas>1 && !infractorHabitual) {
       	  infractorHabitual=true;
