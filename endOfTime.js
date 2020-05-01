@@ -2,7 +2,9 @@ var data='{"time1":"<p>2019 que tiempos tan felices...quien iba a decir que en 2
 var json = JSON.parse(data);
 window.onload = function(e){  
   $('audio').mediaelementplayer();
-  document.querySelector("#player").play();
+  setTimeout(function(){
+      document.querySelector("#player").play();
+  }, 500);  
 };
 
 
@@ -14,10 +16,11 @@ function choiceSelector(value) {
 function timeTravel() {
     document.querySelector(".container").classList.add("hidden");
 	document.querySelector("#player").pause();
-	$('video').mediaelementplayer();	
+	$('video').mediaelementplayer();
+	document.querySelector(".mejs__fullscreen-button button").click();
 	document.querySelector("#playervideo").play();
 	document.querySelector(".final-container-eot").classList.remove("hidden");
 	setTimeout(function(){
-            window.location.href = './simulador-cuarentena-2m.html';
-    }, 10000);
+       window.location.href = './simulador-cuarentena-2m.html';
+    }, 8000);
 }
