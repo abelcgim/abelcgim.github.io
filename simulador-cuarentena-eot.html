@@ -12,42 +12,38 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/mediaelement/latest/mediaelementplayer.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <script defer src="endOfTime.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163394790-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'UA-163394790-1');
-  </script>
   <script src="jquery-3.5.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/mediaelement/latest/mediaelement-and-player.min.js"></script> 
 </head>
 <body>
   <h1 class="hide-text">Orange: Fibra, Móvil y TV | #Quédateencasa</h1>
-    <div class="final-container">
-	  <div class="music-player">
+    <div class="final-container-eot hidden">
+     <video id="playervideo" style="width:100%; height:100%;" controls>
+       <source src="https://www.youtube.com/watch?v=I0lSR0byAOg?modestbranding=1" type="video/x-youtube">
+     </video>
+   </div>
+   <div class="container">
+   	  <div class="music-player">
 	     <audio width="auto" id="player" controls>
 	        <source src="https://www.youtube.com/watch?v=-hHpSlEz73k" type="video/x-youtube">
 	    </audio>
 	  </div>
-   </div>
-   <div class="container">  
-    <p>Bienvenido al Fin del Tiempo.</p>
-    <p>Todos los periodos de tiempo conectan aquí...</p>
-    <div class="btn-grid">
-        <button class="btnChoice" onclick="$(this).remove();">1 AC</button>
+    <div id="text" class="currentTextEOT">
+      <p>Bienvenido al Fin del Tiempo.</p>
+      <p>¿A que momento te gustaría ir?</p>
     </div>
     <div class="btn-grid">
-        <button class="btnChoice" onclick="$(this).remove();">El día del Coronavirus</button>
+        <button id="time1" class="btnChoice" onclick="choiceSelector(this.id)">1 AC</button>
     </div>
     <div class="btn-grid">
-        <button class="btnChoice" onclick="window.location='./simulador-cuarentena';">12 de abril de 2020</button>
+        <button id="time2" class="btnChoice" onclick="choiceSelector(this.id)">El día del Coronavirus</button>
+    </div>
+    <div class="btn-grid">
+        <button id="time3" class="btnChoice" onclick="choiceSelector(this.id);">12 de abril de 2020</button>
     </div>
      <div class="btn-grid">
-        <button class="btnChoice" onclick="$(this).remove();">27 de abril de 2020</button>
+        <button id="time4" class="btnChoice" onclick="timeTravel()">2 de mayo de 2020</button>
     </div>
   </div>
 

@@ -6,6 +6,11 @@ body {background-color: black;}
   height: 75px;
 }
 
+.currentTextEOT {
+  color: rgb(222, 222, 222);
+  height: 125px;
+}
+
 .runText {
   color: rgb(222, 222, 222);
   height: 70px;
