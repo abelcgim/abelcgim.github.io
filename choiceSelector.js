@@ -36,19 +36,21 @@ function toiletClick() {
 }
 
 function newGamePlus() {
+	$('video').mediaelementplayer();
     document.querySelector('.ui-secret-inventory').classList.add("hidden");
 	document.querySelector(".ending").style.display = "none";
 	document.querySelector(".container").style.display = "block";
 	locationSelector("HABITACIÓN");
-	document.querySelector(".currentText").innerHTML="¿Crees que tengo tiempo de hacer un New Game +?<p>Te dejo como compensación 999 cervezas en la cocina.</p>";
+	document.querySelector(".currentText").innerHTML="Notas el aire vibrar, algo ha cambiado en el baño y la cocina.";
 	document.querySelector(".currentText").classList.add("largerText");
 	beerdrunk=0;
-	beerleft=999;
+	beerleft=50;
 	newgameplus=true;
-	json["COCINA"].initText="Estás en tu cocina. Te quedan 999 latas de cerveza, hora de emborracharse.";
+	json["COCINA"].initText="Estás en tu cocina. Te quedan 50 latas de cerveza, hora de emborracharse.";
 	json["COCINA"].choice1.button="BEBER CERVEZA";
-	json["BAÑO"].initText="Ya has cumplido tu misión aquí.";
-	json["BAÑO"]["choice1"].button="";
+	json["BAÑO"].initText="Se ha formado un vórtice temporal en tu retrete después de tirar de la cadena.<p>¿Te aventuras en el? Ya no habrá marcha atrás</p>";
+	json["BAÑO"]["choice1"].button="VENGA, VA";
+	json["BAÑO"]["choice1"].text="";
 }
 
 function exitClick() {
@@ -232,11 +234,26 @@ function choiceSelector(value) {
   var location=document.querySelector(".current-location").innerText;
   var currentText=document.querySelector(".currentText");
   currentText.innerHTML=json[location][value].text;
+  if (location=="BAÑO" && value=="choice1" && newgameplus) {
+  	  if (beerleft==1) {
+  	    document.querySelector(".container").style.display = "none";
+  	    document.querySelector(".achievements").style.display = "none"; 
+	    document.querySelector(".mejs__fullscreen-button button").click();
+	    document.querySelector("#playervideo").play(); 	    document.querySelector(".final-container-eot").classList.remove("hidden");
+ 	    setTimeout(function(){
+	      document.querySelector(".final-container-eot").remove();
+          window.location.href = './simulador-cuarentena-eot.html';
+        }, 10000);
+  	  }
+  	  else
+  	  currentText.innerHTML="Estás demasiado sobrio como para adentrarte en tu retrete."; 	  	  
+  }
   if (location=="BAÑO" && value=="choice1" && !document.querySelector(".ui-secret-inventory").classList.contains("hidden")) {
   	  document.querySelector('.ui-secret-inventory').classList.remove("hidden");
   	  document.querySelector(".container").style.display = "none";
   	  document.querySelector(".ending").style.display = "block";
   }
+  
   if (location=="PASILLO MERCADONA" && value=="choice1") {
   	  locationSelector("FINAL CHALLENGE");
   } 
