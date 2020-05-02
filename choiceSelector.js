@@ -48,7 +48,7 @@ function newGamePlus() {
 	newgameplus=true;
 	json["COCINA"].initText="Estás en tu cocina. Te quedan 50 latas de cerveza, hora de emborracharse.";
 	json["COCINA"].choice1.button="BEBER CERVEZA";
-	json["BAÑO"].initText="Se ha formado un vórtice temporal en tu retrete después de tirar de la cadena.<p>¿Te aventuras en el? Ya no habrá marcha atrás</p>";
+	json["BAÑO"].initText="Se ha formado un vórtice temporal en tu retrete después de tirar de la cadena.<p>¿Te aventuras en el?</p>";
 	json["BAÑO"]["choice1"].button="VENGA, VA";
 	json["BAÑO"]["choice1"].text="";
 }
