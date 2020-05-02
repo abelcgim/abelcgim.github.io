@@ -1,4 +1,4 @@
-var data='{"time1":"<p>2019, que año tan bueno.</p><p>Mejor no interferir aquí.</p>","time2":"<p>¿Estás preparado para embarcarte en una aventura épica de viajes por el tiempo para finalmente evitar el primer contagio por coronavirus?</p><p>Va a ser que no.</p>","time3":"<p>Lo tienes muy visto, mejor ver las diferencias en el futuro.</p>"}';
+var data='{"time1":"<p>2019, que año tan bueno en comparación.</p><p>Mejor no interferir aquí.</p>","time2":"<p>¿Estás preparado para embarcarte en una aventura épica de viajes por el tiempo para finalmente evitar el primer contagio por coronavirus?</p><p>Va a ser que no.</p>","time3":"<p>Lo tienes muy visto, mejor ver las diferencias en el futuro.</p>"}';
 var json = JSON.parse(data);
 window.onload = function(e){  	
 	$('audio').mediaelementplayer({

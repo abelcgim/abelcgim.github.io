@@ -299,7 +299,7 @@ function choiceSelector(value) {
   	  	  if (!newgameplus) {
   	  	    currentText.innerHTML="No se que pretendías conseguir pero te has quedado sin cerveza.";
   	      } else {
-  	        currentText.innerHTML="Pillas tal borrachera que se te olvidan todos los logros obtenidos.<p>LOGRO CONSEGUIDO: BLACKOUT</p>";
+  	        currentText.innerHTML="Pillas tal borrachera que se te olvidan todos los logros obtenidos. Te encuentras más receptivo a sucesos extraños.<p>LOGRO CONSEGUIDO: BLACKOUT</p>";
   	        infractorHabitual=false;
             clapping=false;
             firstNight=false;
