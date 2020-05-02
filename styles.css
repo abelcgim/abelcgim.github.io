@@ -135,6 +135,13 @@ p,span {color: rgb(222, 222, 222);}
 .auto {
   height: auto;
 }
+.catthrower {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+}
 
 .bottom {
   position: fixed;

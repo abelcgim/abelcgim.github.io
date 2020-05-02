@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Disfruta en esta simulación una experiencia realista de guardar la cuarentena en casa ante el coronavirus.">
+  <meta name="keywords" content="coronavirus, cuarentena, atrapado casa, confinamiento, aventura texto, juego navegador, simulador, pandemia, goty 2020">
+  <meta name="author" content="Abel Casado Gimeno" />
+  <title>Simulador cuarentena | #Quédateencasa</title>
+  <link type="text/css" rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/mediaelement/latest/mediaelementplayer.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script defer src="choiceSelector-2m.js"></script>
+
+  <script src="jquery-3.5.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/mediaelement/latest/mediaelement-and-player.min.js"></script> 
+</head>
+<body>
+  <h1 class="hide-text">Simulador cuarentena | #Quédateencasa</h1>
+  <div class="container">
+    <div class="ui-time-place">
+      <span></span><button class="btnReset" onclick="reset()">Resetear</button>
+    </div>
+    <div class="ui-inventory">
+      <span>INVENTARIO: <span class="current-inventory">VACÍO</span></span>
+    </div>
+    <div class="ui-current-location">
+      <span>LOCALIZACIÓN: <span class="current-location">HABITACIÓN</span></span>
+    </div>    
+    <div class="ui-locations-top">
+      <p>Selector de localización: </p>
+      <button class="btnLocation" onclick="locationSelector(this.innerHTML)">Habitación</button>
+      <button class="btnLocation" onclick="locationSelector(this.innerHTML)">Salón</button>
+      <button class="btnLocation" onclick="locationSelector(this.innerHTML)">Cocina</button>
+      <button class="btnLocation" onclick="locationSelector(this.innerHTML)">Ventana</button>     
+    </div>
+    <div class="ui-locations-bottom">
+      <button class="btnLocation" onclick="locationSelector(this.innerHTML)">Baño</button>
+      <button class="btnLocation" onclick="locationSelector(this.innerHTML)">Pasillo</button>
+      <button class="btnLocation" onclick="locationSelector(this.innerHTML)">Mercadona</button>
+      <button class="btnLocation" onclick="locationSelector(this.innerHTML)">Calle</button>
+    </div>
+    <div id="text" class="largerText currentText">
+      <span>Ha comenzado el plan de desescalada de la cuarentena.</span>
+      <span>Son las 15:03 y estás tumbado en la cama.</span>
+      <p>¿Que te gustaría hacer?</p>      
+    </div>
+    <img class='catthrower' style='display: none;' src='./catthrower.jpg' width title='Catthrower' alt='Catthrower'>
+    <div class="btn-grid">
+      <button id="choice1" class="btnChoice" onclick="choiceSelector(this.id)">MIRAR MÓVIL</button>
+    </div>
+    <div  class="btn-grid">
+      <button id="choice2" class="btnChoice" onclick="choiceSelector(this.id)">MIRAR PARED</button>
+    </div>   
+  </div>
+   <div class="final-container hidden">
+	  <div class="runText">
+	    <p>DISTANCIA ANDADA: <span class="current-porcentage">0</span> metros</p>
+	  </div>
+	  <div class="btn-grid">
+        <button class="btnRun" onclick="run()">PASEAR</button>
+        <button class="btnExit hidden" onclick="exitClick()">VOLVER</button>
+      </div>
+      <div class="character1 nomargins">
+	    <p> O<br></p>
+	    <p>/|\<br></p>
+	    <p>/ \<br></p>
+	  </div>
+  </div>
+
+<footer>
+
+ <div class="achievements bottom">
+    <span>LOGROS: <span class="current-achiev">NINGUNO</span></span>
+ </div>
+</footer>
+</body>
+</html>
