@@ -24,6 +24,6 @@ function timeTravel() {
 	document.querySelector(".final-container-eot").classList.remove("hidden");
  	setTimeout(function(){
 	  document.querySelector(".final-container-eot").remove();
-      window.location.href = './simulador-cuarentena-2m.html';
+      window.location.href = './simulador-cuarentena-2m';
     }, 10000);
 }
