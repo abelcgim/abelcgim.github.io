@@ -213,7 +213,7 @@ function choiceSelector(value) {
   }
   if (location=="CALLE" && value=="choice1") {
   	  currentText.innerHTML="Tienes 30 años asi que puedes salir una vez de 6:00 a 10:00 o de 20:00 a 23:00. Todavía no toca.";
-  	  if (time.getHours()>19) {
+  	  if (time.getHours()>19 && time.getHours()<23) {
   	  	if (!paseado) {
   	  	  document.querySelector(".container").style.display = 'none';
   	      document.querySelector(".bottom").style.display = 'none';
