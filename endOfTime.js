@@ -7,7 +7,6 @@ window.onload = function(e){
 	         document.querySelector("#player").play();
 	    }
 	});
-	$('video').mediaelementplayer();
 };
 
 
@@ -17,11 +16,12 @@ function choiceSelector(value) {
 }
 
 function timeTravel() {
-	document.querySelector(".music-player").remove();	
     document.querySelector(".container").classList.add("hidden");
-	document.querySelector(".mejs__fullscreen-button button").click();	
+	document.querySelector("#player").pause();
+	$('video').mediaelementplayer();
+	document.querySelector(".mejs__fullscreen-button button").click();
 	document.querySelector("#playervideo").play();
-    document.querySelector(".final-container-eot").classList.remove("hidden");
+	document.querySelector(".final-container-eot").classList.remove("hidden");
  	setTimeout(function(){
 	  document.querySelector(".final-container-eot").remove();
       window.location.href = './simulador-cuarentena-2m';
