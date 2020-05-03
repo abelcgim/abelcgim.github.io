@@ -3,7 +3,7 @@ var data = '{"HABITACIÓN":{"initText":"Te tumbas en la cama de tu habitación."
 var json = JSON.parse(data);
 var time=new Date(2020,04,02,15,03);
 var bagFound=false;
-var firstNight=false;
+var bathroomOpen=false;
 var multas=0;
 var beerleft=10
 var beerdrunk=0
@@ -30,6 +30,8 @@ function exitClick() {
 	locationSelector("HABITACIÓN");
 	document.querySelector(".container").style.display="block";
     document.querySelector(".bottom").style.display = 'block';
+    addTime(25);
+    document.querySelector(".ui-time-place span").innerText=time.toLocaleString();
     document.querySelector(".currentText").innerHTML="Vuelves de las experiencias inolvidables que has experimentado en tu paseo.";
     if (!libertad) {
       document.querySelector(".currentText").innerHTML+="<p>LOGRO CONSEGUIDO: LIBERTAD</p>";
@@ -37,6 +39,14 @@ function exitClick() {
       libertad=true;
     }
     paseado=true;
+}
+
+function openBathroom() {
+	json["BAÑO"].initText="Encuentras el baño abierto.<p>Pero las realidades dentro del vórtice están siendo actualmente alteradas por las acciones del gobierno.</p>";
+	json["BAÑO"].initText+="<img class='tobecontinued' style='display: block;' src='./isthata.jpg' width title='ToBeContinued' alt='ToBeContinued'>";
+	json["BAÑO"]["choice1"].button="";
+	json["BAÑO"]["choice2"].button="";
+	bathroomOpen=true;
 }
 
 function resetPaseo() {
@@ -51,7 +61,6 @@ function resetPaseo() {
 
 
 function run() {
-	console.log("disntancees"+currentDistance);
 	if (!haciaatras) {
       currentDistance+=100;
       var br = document.createElement('br');
@@ -98,6 +107,7 @@ function addTime(value) {
 	}
     else if (time.getHours()==0) {
     	resetPaseo();
+    	if (!bathroomOpen) openBathroom();
     	document.querySelector(".catthrower").style.display = "none";
 		document.querySelector(".currentText").innerHTML="Tras un intenso día de cuarentena caes dormido. <p>Te despiertas a la mañana siguiente, ya acostumbrado a las infinitas posibilidades que trae este nuevo día.</p>"
 		document.querySelector("#choice1").style.display = "none";
@@ -212,7 +222,7 @@ function choiceSelector(value) {
   	  currentText.innerHTML=json[location][value][randomText];
   }
   if (location=="CALLE" && value=="choice1") {
-  	  currentText.innerHTML="Tienes 30 años asi que puedes salir una vez de 6:00 a 10:00 o de 20:00 a 23:00. Todavía no toca.";
+  	  currentText.innerHTML="Tienes 30 años así que puedes salir una vez de 6:00 a 10:00 o de 20:00 a 23:00. Todavía no toca.";
   	  if (time.getHours()>19 && time.getHours()<23) {
   	  	if (!paseado) {
   	  	  document.querySelector(".container").style.display = 'none';

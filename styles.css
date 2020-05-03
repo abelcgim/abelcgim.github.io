@@ -135,12 +135,23 @@ p,span {color: rgb(222, 222, 222);}
 .auto {
   height: auto;
 }
+
 .catthrower {
   width: 150px;
   height: 150px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 5px;
+}
+
+@media screen and (min-width: 1080px) {
+  .catthrower {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+  }
 }
 
 .bottom {
