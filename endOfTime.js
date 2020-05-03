@@ -25,5 +25,5 @@ function timeTravel() {
  	setTimeout(function(){
 	  document.querySelector(".final-container-eot").remove();
       window.location.href = './simulador-cuarentena-2m';
-    }, 10000);
+    }, 12000);
 }
