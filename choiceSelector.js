@@ -243,7 +243,7 @@ function choiceSelector(value) {
  	    setTimeout(function(){
 	      document.querySelector(".final-container-eot").remove();
           window.location.href = './simulador-cuarentena-eot.html';
-        }, 12000);
+        }, 10000);
   	  }
   	  else
   	  currentText.innerHTML="Estás demasiado sobrio como para adentrarte en tu retrete."; 	  	  
