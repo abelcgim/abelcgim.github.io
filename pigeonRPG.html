@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="pigeon">
+  <title>Pigeon RPG</title>
+  <link type="text/css" rel="stylesheet" href="pigeonRPG.css">
+  <link rel="shortcut icon" href="https://ih1.redbubble.net/image.465912335.9747/st,small,507x507-pad,600x600,f8f8f8.u1.jpg" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+   <script src="jquery-3.5.0.min.js"></script>
+  <script defer src="pigeonRPG.js"></script>
+</head>
+<body>
+  <h1 class="hide-text">Pigeon RPG</h1>
+  
+<div class="container">
+  
+  <div id="audioBoss" class="audio-container">
+	<audio controls autoplay loop class="noOpacity">
+	  <source src="./resourcesPigeon/song.mp3" type="audio/mp3">
+	</audio>
+  </div> 
+  
+  <div style="display: block;width:100%">
+	  <div id="statsPigeon" class="leftDiv noOpacity">
+		<div class="ui-container">
+		  <span>NAME: PIGEON</span>
+		</div>
+		<div class="ui-container">
+		  <span >HP: <span class="hpPigeon">25</span>/<span class="totalHpPigeon">25</span></span>
+		</div>   
+		<div class="ui-container">
+		  <span >ATK: <span class="attackStat">5</span></span>
+		</div> 
+		<div class="ui-container">
+		  <span >STATUS: <span class="statusPigeon">NONE</span></span>
+		</div> 		
+	  </div>
+	  <div id="statsHera" class="rightDiv noOpacity">
+		<div class="ui-container">
+		  <span class="nameHera">NAME: HERA NEA</span>
+		</div>
+		<div class="ui-container">
+		  <span >HP: <span class="hpHera">30</span>/<span class="totalHpHera">30</span></span>
+		</div>   
+		<div class="ui-container">
+		  <span >ATK: <span class="attackStat">5</span></span>
+		</div>  
+		<div class="ui-container">
+		  <span >STATUS: <span class="statusHera">NONE</span></span>
+		</div> 		
+	  </div> 
+  </div>
+ 
+ <div id="twoScreen" class="hidden">
+     <img class="imageLeft" border="0" src="./resourcesPigeon/pigeonMC.png"/>
+     <img id="evilPigeon" class="imageRight" border="0" src="./resourcesPigeon/evilNea.webp"/>
+ </div>
+        
+ <p><img id="pigeon" class="pigeonSingle" src='./resourcesPigeon/pigeonMC.png' title='Pigeon' alt='Pigeon'></p> 
+ <div id="text" class="white currentText" style="margin: auto;">
+      <span>You are but a humble PIGEON saving the kingdom from evil. After an epic quest you have finally made it to the final boss.</span>
+      <p>Who could be the mastermind behind all this suffering?</p>
+ </div>   
+ <div id="enemyText" class="enemyText" style="margin: auto;">
+ <p class="orange"></p>
+ </div>  
+
+ <div id="startButtons" class="btn-grid">
+     <button id="start" class="btnChoice" onclick="introMode()">PRRRRUUU (Onwards!)</button>
+     <button id="next" class="btnChoice hidden" onclick="nextText()">NEXT</button>
+</div>
+ 
+ <div class="btn-grid">
+ 	 <button id="attack" class="btnChoice hidden" onclick="action()">ATTACK</button>
+ </div>
+ <div class="btn-grid">
+ 	 <button id="mAttack" class="btnChoice hidden" onclick="action('tilt')">M.ATTACK</button>
+ </div>
+ <div class="btn-grid">
+ 	 <button id="items" class="btnChoice hidden" onclick="items()">ITEMS</button>
+ </div>
+  <div class="btn-grid-items hidden">
+ 	 <button class="btnChoice" onclick="action('eat')">EAT THEM</button>
+ </div>
+ <div class="btn-grid-items hidden">
+ 	 <button class="btnChoice" onclick="action('throw')">THROW THEM</button>
+ </div>
+ <div class="btn-grid-items hidden">
+ 	 <button class="btnChoice" onclick="goBack()">GO BACK</button>
+ </div>
+  <div class="btn-gameover hidden">
+ 	 <button class="btnChoice" onclick="gameover()">GAME OVER</button>
+ </div>
+   <div class="btn-credits hidden">
+ 	 <button class="btnChoice" onclick="epilogue()">CREDITS</button>
+ </div>
+ 
+ </div>
+  
+  
+<div class="over hidden">
+  <div class="audio-container">
+	<audio controls autoplay loop>
+	  <source src="./resourcesPigeon/gameover.mp3" type="audio/mp3">
+	</audio>
+  </div> 
+  <p><img width="300px" src="./resourcesPigeon/gameOver.png"/></p>
+  <p>You cannot give up just yet...</p>
+  <p>PIGEON! Stay determined...</p>
+  <p><img src="./resourcesPigeon/cryPigeon.webp"/></p>
+  <div class="btn-grid-over">   
+    <button class="btnChoice" onclick="reset()">TRY AGAIN</button>
+  </div>
+</div>
+
+<div class="credits hidden">
+<div class="audio-container">
+	<audio controls autoplay loop>
+	  <source src="./resourcesPigeon/credits.mp3" type="audio/mp3">
+	</audio>
+</div> 
+<p><u>EPILOGUE</u>: After the defeat of the Evil Pigeon Queen HERA NEA, JERRY replaced her as the ruler. <p>Peace and prosperity finally bloomed in the kingdom.</p></p>
+<p><img src="./resourcesPigeon/Jerrynea.png"/></p>
+<p><u>CREDITS</u></p>
+<p>Songs used/JERRY: UNDERTALE</p>
+<p>Emotes/Pigeon Model: <a href="https://www.twitch.tv/hera_nea">twitch.tv/hera_nea</a> </p>
+<p><u>SPECIAL THANKS</u></p>
+<p>HeraNea for inspiring this "mini-game".</p>
+<p><img src="./resourcesPigeon/trueForm.png"/></p>
+<p>And YOU, for playing!</p>
+<p><img src="./resourcesPigeon/heart.webp"/></p>
+</div>
+
+<footer>
+</footer>
+</body>
+</html>
