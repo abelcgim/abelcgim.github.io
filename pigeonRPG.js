@@ -33,7 +33,7 @@ window.onload = function(e){
   battleTextos.push("PIGEON attacks.;5")
   battleTextos.push("HERA NEA uses RACCOON ATTACK.;10")
   battleTextos.push("PIGEON attacks.;5")
-  battleTextos.push("HERA NEA uses RACCOON ATTACK.;10")
+  battleTextos.push("HERA NEA uses RACCOON ATTACK.;10")	
 };
 
 
@@ -69,21 +69,23 @@ function deathCheck() {
 }
 
 function gameover() {
-	document.querySelector("#audioBoss").remove();
-	document.querySelector(".over .audio-container audio").play();
+	document.querySelector(".audio-container audio").pause();
+	document.querySelector(".audio-container audio").src="./resourcesPigeon/gameover.mp3"
+	document.querySelector(".audio-container audio").play();
 	document.querySelector(".over").classList.remove("hidden");
 	document.querySelector('.container').classList.add("hidden");	
 }
 
-function epilogue() {
-	document.querySelector("#audioBoss").remove();	
-	document.querySelector(".credits .audio-container audio").play();
+function epilogue() {	
+	document.querySelector(".audio-container audio").pause();
+	document.querySelector(".audio-container audio").src="./resourcesPigeon/credits.mp3"
+	document.querySelector(".audio-container audio").play();
 	document.querySelector(".credits").classList.remove("hidden");
 	document.querySelector('.container').classList.add("hidden");	
 }
 
 function reset() {
-	document.querySelector(".over audio").pause();	
+	document.querySelector(".audio-container audio").pause();
 	location.reload();
 }
 
