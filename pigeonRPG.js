@@ -83,6 +83,7 @@ function epilogue() {
 }
 
 function reset() {
+	document.querySelector(".over audio").pause();	
 	location.reload();
 }
 
