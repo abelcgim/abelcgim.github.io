@@ -266,6 +266,7 @@ function nextText() {
 		document.querySelector("#items").classList.remove("hidden");
 		document.querySelector("#statsPigeon").classList.remove("noOpacity");
 		document.querySelector("#statsHera").classList.remove("noOpacity");
+		document.querySelector(".audio-container audio").src="./resourcesPigeon/song.mp3";
 		document.querySelector(".audio-container audio").classList.remove("noOpacity");
 		document.querySelector(".audio-container audio").play();
 		$('#startButtons').remove();
