@@ -3,7 +3,6 @@ var battleCounter=0;
 
 var textos = [];
 var battleTextos = [];
-var tiltedTextos = ["PIGEON TILS","HERA NEA IS TILTED"];
 var currentText=document.querySelector(".currentText");
 var enemyText=document.querySelector(".enemyText p");
 
