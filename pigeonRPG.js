@@ -158,7 +158,7 @@ function action(type) {
 					textToShow="HERA NEA is already TILTED. The Mental Attack has no effect."
 				}
 				else {
-					textToShow="PIGEON bullies HERA NEA with a Mental Attack. She gets TILTED, will receive DOUBLE DAMAGE from ATTACKS"
+					textToShow="PIGEON bullies HERA NEA with a Mental Attack. She gets TILTED, will receive DOUBLE DAMAGE from ATTACKS."
 					addHeraState("TILTED (2 TURNS LEFT)")						
 				}			
 			}
