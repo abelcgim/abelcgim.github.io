@@ -226,7 +226,7 @@ function action(type) {
 				document.querySelector('.hpPigeon').innerText=pigeonHP;
 				enemyText.innerHTML+=", dealing "+damage+" DAMAGE.";
 				if (pigeonHP<=0) {
-					enemyText.innerHTML+=" and KO's PIGEON.";	
+					enemyText.innerHTML+=" PIGEON is KO'ed.";	
 				}
 			}
 			if (state!=null) {					
