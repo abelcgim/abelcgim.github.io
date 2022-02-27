@@ -17,23 +17,24 @@ var heraStatus=document.querySelector('.statusHera')
 window.onload = function(e){
   textos.push("PIGEON: It can't be! What's the PIGEON QUEEN doing here?");
   textos.push("HERA NEA: Muahahaha, I see you've finally made it into my secret evil nest.");
-  textos.push("HERA NEA: I'm not the benevolent PIGEON QUEEN I pretend to be.");
-  textos.push("HERA NEA: All along I've been doing my sadistic, evil actions from the shadows. All the inflation in the pigeon kingdom? That was me.");
+  textos.push("HERA NEA: I'm not just the benevolent PIGEON QUEEN I pretend to be.");
+  textos.push("HERA NEA: All along I've been doing my sadistic, evil actions from the shadows. The inflation in the pigeon kingdom? That was all me.");
   textos.push("HERA NEA: Now, fight me PIGEON!");
-  battleTextos.push("PIGEON attacks.;5")
-  battleTextos.push("HERA NEA does some bullshit.;5")
-  battleTextos.push("PIGEON uses PIGEON ATTACK. HERA NEA tries to dodge it, but instead rushes towards it.;5")
+  battleTextos.push("PIGEON attacks;5")
+  battleTextos.push("HERA NEA does some bullshit;5")
+  battleTextos.push("PIGEON attacks. HERA NEA tries to dodge, but instead rushes towards it;5")
   battleTextos.push("HERA NEA starts drinking coffee, energizing herself.")
+  battleTextos.push("PIGEON attacks;5")
+  battleTextos.push("HERA NEA finishes her coffee and morphs into her TRUE FORM, increasing her ATTACK. Her appearance stuns PIGEON.;;TRUE FORM")
+  battleTextos.push("PIGEON is too stunned at the sight of whatever the fu..carrots that thing is to act.")
+  //battleTextos.push("PIGEON is too stunned to act, staring in wonder at the mysterious creature.")
+  battleTextos.push("HERA NEA screeches and uses DRILL ATTACK;15")
+  battleTextos.push("PIGEON attacks;5")
+  battleTextos.push("HERA NEA uses RACCOON ATTACK;15")
+  battleTextos.push("PIGEON attacks;5")
+  battleTextos.push("HERA NEA uses RACCOON ATTACK;15")
   battleTextos.push("PIGEON attacks.;5")
-  battleTextos.push("HERA NEA finishes drinking coffee and morphs into her TRUE FORM, increasing her ATTACK. Her appearance stuns PIGEON.;;TRUE FORM")
-  battleTextos.push("PIGEON is too stunned at the sight of whatever the fuck that thing is to act.")
-  battleTextos.push("HERA NEA screeches and uses DRILL ATTACK.;10")
-  battleTextos.push("PIGEON attacks.;5")
-  battleTextos.push("HERA NEA uses RACCOON ATTACK.;10")
-  battleTextos.push("PIGEON attacks.;5")
-  battleTextos.push("HERA NEA uses RACCOON ATTACK.;10")
-  battleTextos.push("PIGEON attacks.;5")
-  battleTextos.push("HERA NEA uses RACCOON ATTACK.;10")	
+  battleTextos.push("HERA NEA uses RACCOON ATTACK;15")	
 };
 
 
@@ -164,10 +165,10 @@ function action(type) {
 			}
 			if (type=="eat") {
 				if (pigeonHP<25) {
-					battleTextos[battleCounter]="PIGEON eats the BREAD CRUMBS and heals for 1 HP";
+					battleTextos[battleCounter]="PIGEON eats the BREAD CRUMBS and heals for 1 HP.";
 					pigeonHP=pigeonHP+1;
 					document.querySelector('.hpPigeon').innerText=pigeonHP;
-				} else battleTextos[battleCounter]="PIGEON eats the BREAD CRUMBS but he's already at MAX HP";
+				} else battleTextos[battleCounter]="PIGEON eats the BREAD CRUMBS but he's already at MAX HP.";
 				textToShow=battleTextos[battleCounter].split(";")[0];
 				crumbs=false;
 			}
@@ -186,7 +187,10 @@ function action(type) {
 			if (heraStatus.innerText.indexOf('TILTED')>-1) {
 				damage=damage*2
 			}
-			currentText.innerHTML+=" Deals "+damage+" DAMAGE";
+			if (textToShow.indexOf("dodge")>-1) {
+				currentText.innerHTML+=". It deals "+damage+" DAMAGE.";
+			}
+			else currentText.innerHTML+=", dealing "+damage+" DAMAGE.";
 			heraHP=heraHP-damage;
 			document.querySelector('.hpHera').innerText=heraHP;
 		}
@@ -202,18 +206,17 @@ function action(type) {
 				//Removed tilt when eating if applied
 				var textEating;
 				if (heraStatus.innerText.indexOf('EATING (0')>-1) {
-					textEating="HERA NEA eats the remaining BREAD CRUMBS";
+					textEating="HERA NEA eats the remaining BREAD CRUMBS.";
 				}
-				else textEating="HERA NEA eats half of the BREAD CRUMBS";
+				else textEating="HERA NEA eats half of the BREAD CRUMBS.";
 				if (heraStatus.innerText.indexOf('TILTED')>-1)  {
 					textEating+=". Eating them removes her TILTED status."
-					console.log("check"+heraStatus.innerText);
 					heraStatus.innerText=heraStatus.innerText.replace("TILTED (1 TURN LEFT) , ","");
 					heraStatus.innerText=heraStatus.innerText.replace("TILTED (0 TURNS LEFT) , ","");	
 					heraStatus.innerText=heraStatus.innerText.replace(", TILTED (2 TURNS LEFT)","");				
 				}
 				battleTextos.splice(battleCounter, 0, textEating);
-				battleTextos.splice(battleCounter+1, 0, "PIGEON attacks the enemy.;5");
+				battleTextos.splice(battleCounter+1, 0, "PIGEON attacks the enemy;5");
 			}
 			var textToShow=battleTextos[battleCounter].split(";")[0];
 			var damage=battleTextos[battleCounter].split(";")[1];
@@ -222,7 +225,7 @@ function action(type) {
 			if (damage!=null && damage>0) {
 				pigeonHP=pigeonHP-damage;
 				document.querySelector('.hpPigeon').innerText=pigeonHP;
-				enemyText.innerHTML+=" Deals "+damage+" DAMAGE";
+				enemyText.innerHTML+=", dealing "+damage+" DAMAGE.";
 				if (pigeonHP<=0) {
 					enemyText.innerHTML+=" and KO's PIGEON.";	
 				}
@@ -231,7 +234,7 @@ function action(type) {
 				if (state=="TRUE FORM") {
 					document.querySelector('#evilPigeon').src="./resourcesPigeon/trueForm.png";
 					document.querySelector('.nameHera').innerText="NAME: HERA NEA (TRUE FORM)";
-					document.querySelector('#statsHera .attackStat').innerText="10";
+					document.querySelector('#statsHera .attackStat').innerText="15";
 					pigeonStatus.innerText="STUNNED (1 TURN LEFT)";
 				} else {
 					heraStatus.innerText=state;
