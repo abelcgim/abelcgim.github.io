@@ -209,7 +209,7 @@ function action(type) {
 				}
 				else textEating="HERA NEA eats half of the BREAD CRUMBS.";
 				if (heraStatus.innerText.indexOf('TILTED')>-1)  {
-					textEating+=". Eating them removes her TILTED status."
+					textEating+=" Eating them removes her TILTED status."
 					heraStatus.innerText=heraStatus.innerText.replace("TILTED (1 TURN LEFT) , ","");
 					heraStatus.innerText=heraStatus.innerText.replace("TILTED (0 TURNS LEFT) , ","");	
 					heraStatus.innerText=heraStatus.innerText.replace(", TILTED (2 TURNS LEFT)","");				
@@ -241,7 +241,7 @@ function action(type) {
 			}
 			$('.btn-grid').removeClass('hidden');
 			battleCounter++;		
-		} else enemyText.innerHTML+="HERA NEA faints";
+		} else enemyText.innerHTML+="HERA NEA faints.";
 		deathCheck();
 	}, timeout);
 }
