@@ -17,7 +17,7 @@ window.onload = function(e){
   textos.push("PIGEON: It can't be! What's the PIGEON QUEEN doing here?");
   textos.push("HERA NEA: Muahahaha, I see you've finally made it into my secret evil nest.");
   textos.push("HERA NEA: I'm not just the benevolent PIGEON QUEEN I pretend to be.");
-  textos.push("HERA NEA: All along I've been doing my sadistic, evil actions from the shadows. The inflation in the pigeon kingdom? That was all me.");
+  textos.push("HERA NEA: All along I've been doing my sadistic, evil actions from the shadows. The alarming inflation in the pigeon kingdom? That was all me.");
   textos.push("HERA NEA: Now, fight me PIGEON!");
   battleTextos.push("PIGEON attacks;5")
   battleTextos.push("HERA NEA does some bullshit;5")
