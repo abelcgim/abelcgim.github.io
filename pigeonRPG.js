@@ -172,7 +172,7 @@ function action(type) {
 				crumbs=false;
 			}
 			if (type=="throw") {
-				battleTextos[battleCounter]="PIGEON throws the BREAD CRUMBS around. HERA NEA stares at them hungrily.";
+				battleTextos[battleCounter]="PIGEON throws the BREAD CRUMBS around. HERA NEA notices the delicious feast.";
 				textToShow=battleTextos[battleCounter].split(";")[0];
 				addHeraState("EATING (1 TURN LEFT)");
 				crumbs=false;
