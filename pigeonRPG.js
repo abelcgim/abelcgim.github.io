@@ -227,6 +227,7 @@ function action(type) {
 				enemyText.innerHTML+=", dealing "+damage+" DAMAGE.";
 				if (pigeonHP<=0) {
 					enemyText.innerHTML+=" PIGEON is KO'ed.";	
+					document.querySelector('.imageLeft').src="./resourcesPigeon/pigeonMCded.png";
 				}
 			}
 			if (state!=null) {					

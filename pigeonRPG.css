@@ -76,7 +76,7 @@ p,span {color: rgb(222, 222, 222);}
 
 	.imageRight {
 		display: inline-block;
-		margin-left: 100px;
+		margin-left: 50px;
 		margin-right: auto;
 		height: 250px; 
 	}
