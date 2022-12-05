@@ -32,6 +32,16 @@
                 "key": "highscore2"
             },
             {
+                "url": "assets/ibuprofen.png",
+                "type": "image",
+                "key": "ibuprofen"
+            },
+            {
+                "url": "assets/ibuprofen2.png",
+                "type": "image",
+                "key": "ibuprofen2"
+            },
+            {
                 "url": "assets/ikeasmall.png",
                 "type": "image",
                 "key": "ikeasmall"
@@ -45,6 +55,21 @@
                 "url": "assets/omeprazole.png",
                 "type": "image",
                 "key": "omeprazole"
+            },
+            {
+                "url": "assets/omeprazole2.png",
+                "type": "image",
+                "key": "omeprazole2"
+            },
+            {
+                "url": "assets/paracetamol.png",
+                "type": "image",
+                "key": "paracetamol"
+            },
+            {
+                "url": "assets/paracetamol2.png",
+                "type": "image",
+                "key": "paracetamol2"
             },
             {
                 "url": "assets/pharmacy.png",

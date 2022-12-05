@@ -73,7 +73,7 @@ class Level extends Phaser.Scene {
 		// instructions
 		const instructions = this.add.text(396, 217, "", {});
 		instructions.setOrigin(0.5, 0.5);
-		instructions.text = "INSTRUCTIONS\n\nA->Move Left\nD->Move Right\nCollect Omeprazole\nAvoid Ikea Thingies";
+		instructions.text = "INSTRUCTIONS\n\nA->Move Left\nD->Move Right\nCollect Drugs\nAvoid Ikea Thingies";
 		instructions.setStyle({ "align": "center", "backgroundColor": "", "color": "#ffffffff", "fontFamily": "Arial", "fontSize": "30px", "stroke": "#4d0606ff" });
 
 		// unchecked
@@ -229,7 +229,7 @@ class Level extends Phaser.Scene {
 	music;
 	inputName;
 	submitted=false;
-	
+
 
     checkHighScore() {
 		const request = new XMLHttpRequest();
@@ -318,10 +318,25 @@ class Level extends Phaser.Scene {
 		}
 		var randomX= Math.random() * (800 - 0) + 0;
 		var randomAngle= Math.random() * (360 - 0) + 0;
-		this[name] = this.physics.add.sprite(randomX, y, "omeprazole");
-		this[name].scaleX = 0.5149186655659846;
-		this[name].scaleY = 0.4674731300216144;	
-		this[name].body.setSize(282, 188, false);
+		var nameDrug="omeprazole"
+		//var nameDrug="paracetamol"
+		var sprite=Math.floor(Math.random() * 3);
+		if (sprite==0) {
+			this[name] = this.physics.add.sprite(randomX, y, "omeprazole");
+			this[name].body.setSize(150, 100, false);
+		}
+		if (sprite==1) {
+			this[name] = this.physics.add.sprite(randomX, y, "paracetamol");
+			this[name].scaleX =0.5213919856004829;
+			this[name].scaleY = 0.5516130737411581;
+			this[name].body.setSize(220, 180, false);
+		}
+		if (sprite==2) {
+			this[name] = this.physics.add.sprite(randomX, y, "ibuprofen");
+			this[name].scaleX = 0.47156971809971815;
+			this[name].scaleY = 0.42397950509390353;
+			this[name].body.setSize(150, 287, false);			
+		}
 		this.physics.add.collider(this.pharmaPaper_1, this[name],collideCallback,undefined, this);
 		this.physics.add.collider(this.pharmaPaper, this[name],collideCallback,undefined, this);
 	}
@@ -462,7 +477,7 @@ class Level extends Phaser.Scene {
 			request.setRequestHeader("Security-key", "sadasdasfasdasdasfgdfadf");
 			request.onreadystatechange = () => {
 			};
-			
+
 			this.input.keyboard.enabled = true;
 			var jsonPlayer = {
 				  "name" :"",
@@ -503,7 +518,9 @@ class Level extends Phaser.Scene {
         this.textOme.setDepth(10);
 		this.gameOverText.setDepth(10);	
 		if (!this.sys.game.device.os.desktop){
-            console.log("mobile")
+			var textInstructions=this.instructions.text
+			textInstructions=textInstructions.replace("A->Move Left\nD->Move Right","Tap to the left or right to move in that direction");
+			this.instructions.text=textInstructions
 		}	
 		this.music = this.sound.add('theme');
 		this.startButton.setInteractive();
@@ -576,6 +593,19 @@ class Level extends Phaser.Scene {
 				this.pharmaPaper.x += 13;
 				this.pharmaPaper_1.x +=13;
 			}	
+			if (!this.sys.game.device.os.desktop)  {
+				if (this.input.activePointer.isDown) {
+                    var difference=this.input.activePointer.worldX-this.pharmaPaper.getCenter().x	
+					if(difference>30) {					
+						this.pharmaPaper.x += 13;
+				        this.pharmaPaper_1.x += 13;
+					}
+					else if (difference<-10) {	
+						this.pharmaPaper.x -= 13;
+						this.pharmaPaper_1.x -=13;
+					}
+				}
+			}
 		}		
     }
 
