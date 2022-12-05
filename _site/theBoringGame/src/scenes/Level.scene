@@ -1,0 +1,370 @@
+{
+    "id": "01aefa93-6044-4159-8358-7e91310aa05f",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Level"
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "92f6ea28-049c-41cc-97bf-7aa8657aaa96",
+            "label": "pharmacy",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "pharmacy"
+            },
+            "x": 388,
+            "y": 304,
+            "visible": false
+        },
+        {
+            "type": "ArcadeSprite",
+            "id": "39e9a123-2e73-45e3-9630-1dacf9a3ce27",
+            "label": "pharmaPaper_1",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "pharmaPaper"
+            },
+            "x": 400,
+            "y": 501,
+            "scaleX": 0.4055216687893193,
+            "scaleY": 0.3883533063252391,
+            "ArcadeComponent.active": true,
+            "moves": false,
+            "allowGravity": false,
+            "collideWorldBounds": true,
+            "pushable": false,
+            "radius": 128,
+            "body.width": 325,
+            "body.height": 260,
+            "body.offset.x": 100,
+            "body.offset.y": 250
+        },
+        {
+            "type": "ArcadeSprite",
+            "id": "431f1c87-fa9f-4697-a89b-11db23637758",
+            "label": "pharmaPaper",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "pharmaPaper"
+            },
+            "x": 400,
+            "y": 501,
+            "scaleX": 0.4055216687893193,
+            "scaleY": 0.3883533063252391,
+            "ArcadeComponent.active": true,
+            "moves": false,
+            "allowGravity": false,
+            "collideWorldBounds": true,
+            "pushable": false,
+            "radius": 128,
+            "body.width": 140,
+            "body.height": 499,
+            "body.offset.x": 200,
+            "body.offset.y": 20
+        },
+        {
+            "type": "ArcadeSprite",
+            "id": "3cccc41d-7877-4c4c-9bd7-4ee143a4be6b",
+            "label": "ikeasmall",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "ikeasmall"
+            },
+            "x": 1007,
+            "y": 688,
+            "scaleX": 0.13534584828819302,
+            "scaleY": 0.1697938073672074,
+            "body.width": 350,
+            "body.height": 250,
+            "body.offset.x": 30,
+            "body.offset.y": 30
+        },
+        {
+            "type": "Image",
+            "id": "4c69b201-12c4-4db5-81ae-b5899ddc0669",
+            "label": "black",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "black"
+            },
+            "x": 424,
+            "y": 270,
+            "scaleX": 4.505493526495286,
+            "scaleY": 4.078512623252157
+        },
+        {
+            "type": "Image",
+            "id": "d996d962-9c50-4660-a814-6fe5ecd06492",
+            "label": "boringLogo",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "boringLogo"
+            },
+            "x": 713,
+            "y": 555,
+            "scaleX": 0.21338055851721333,
+            "scaleY": 0.21777535158768985
+        },
+        {
+            "type": "Text",
+            "id": "a66f1408-edbc-49a1-b077-1f9a82d49183",
+            "label": "inspiredBy",
+            "scope": "PUBLIC",
+            "components": [],
+            "x": 710,
+            "y": 515,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Inspired by:",
+            "fontFamily": "Arial",
+            "fontSize": "20px",
+            "color": "#ffffffff",
+            "backgroundColor": ""
+        },
+        {
+            "type": "Text",
+            "id": "f7b106b0-c7e2-40a4-b09c-6c429369afb4",
+            "label": "ASMR",
+            "scope": "PUBLIC",
+            "components": [],
+            "x": 87,
+            "y": 25,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "ASMR Sound:",
+            "fontFamily": "Arial",
+            "fontSize": "25px",
+            "color": "#ffffffff",
+            "backgroundColor": ""
+        },
+        {
+            "type": "Text",
+            "id": "3161207f-80ae-40e3-a7c4-053b7f89340b",
+            "label": "instructions",
+            "scope": "PUBLIC",
+            "components": [],
+            "x": 396,
+            "y": 217,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "INSTRUCTIONS\n\nA->Move Left\nD->Move Right\nCollect Omeprazole\nAvoid Ikea Thingies",
+            "align": "center",
+            "fontFamily": "Arial",
+            "fontSize": "30px",
+            "color": "#ffffffff",
+            "stroke": "#4d0606ff",
+            "backgroundColor": ""
+        },
+        {
+            "type": "Image",
+            "id": "2ddfeb19-7a91-4a7a-8645-78a2d0e117f8",
+            "label": "unchecked",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "unchecked"
+            },
+            "x": 193,
+            "y": 25,
+            "scaleX": 0.24595876320170149,
+            "scaleY": 0.2291981656224381
+        },
+        {
+            "type": "Image",
+            "id": "663dd244-f698-4a3f-aaa5-ec7b0c943ec5",
+            "label": "checked",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "checked"
+            },
+            "x": 193,
+            "y": 25,
+            "scaleX": 0.24595876320170149,
+            "scaleY": 0.2291981656224381,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "d3ae7b50-49a6-4398-8f33-5fba9df6e3ef",
+            "label": "highscoresButton",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "highscore"
+            },
+            "x": 394,
+            "y": 450,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Image",
+            "id": "025a17c0-d37f-4be7-bdc5-2d00d8605a8b",
+            "label": "highscoresButton2",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "highscore2"
+            },
+            "x": 394,
+            "y": 376,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "6fcbc269-9170-4f93-a8f2-d449aad874da",
+            "label": "startButton",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "start"
+            },
+            "x": 394,
+            "y": 365,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Image",
+            "id": "8c8a5ef3-cb9e-4392-b172-cfadc13f844c",
+            "label": "retryButton",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "retry"
+            },
+            "x": 396,
+            "y": 311,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "visible": false
+        },
+        {
+            "type": "Text",
+            "id": "a174a5f6-2fc8-41d9-8a5f-e4af68139266",
+            "label": "highscoreText",
+            "scope": "PUBLIC",
+            "components": [],
+            "x": 394,
+            "y": 248,
+            "originX": 0.5,
+            "originY": 0.5,
+            "visible": false,
+            "text": "HIGHSCORES (TOP 15)\n\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25",
+            "align": "center",
+            "fontFamily": "Arial",
+            "fontSize": "25px",
+            "color": "#ffffffff",
+            "stroke": "#4d0606ff",
+            "backgroundColor": ""
+        },
+        {
+            "type": "Image",
+            "id": "8e0f8cd7-da02-4e24-bee4-a2a1cb1118bc",
+            "label": "backButton",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "back"
+            },
+            "x": 393,
+            "y": 553,
+            "visible": false
+        },
+        {
+            "type": "Text",
+            "id": "3636c285-47fe-4b6a-b5c4-1cf97a98914a",
+            "label": "textOme",
+            "scope": "PUBLIC",
+            "components": [],
+            "x": 104,
+            "y": 60,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Score: 0",
+            "fixedWidth": 200,
+            "align": "justify",
+            "fontFamily": "Arial",
+            "fontSize": "35px",
+            "color": "#8a0606ff",
+            "stroke": "#000000ff",
+            "strokeThickness": 2
+        },
+        {
+            "type": "Image",
+            "id": "1d35166c-477b-475c-b84f-c1cd2038d665",
+            "label": "submitButton",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "submit"
+            },
+            "x": 532,
+            "y": 251,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "visible": false
+        },
+        {
+            "type": "Text",
+            "id": "057a1112-6085-4dfa-ae20-baad283e67f2",
+            "label": "scoreSubmitted",
+            "scope": "PUBLIC",
+            "components": [],
+            "x": 398,
+            "y": 250,
+            "originX": 0.5,
+            "originY": 0.5,
+            "visible": false,
+            "text": "SCORE SUBMMITED",
+            "fixedWidth": 350,
+            "align": "justify",
+            "fontFamily": "Arial",
+            "fontSize": "35px",
+            "color": "#000000ff",
+            "stroke": "#fcfcfcff",
+            "strokeThickness": 2,
+            "shadow.color": "#ffffffff"
+        },
+        {
+            "type": "Text",
+            "id": "e508b7ff-c1bb-48ac-a37a-e0d8c098f427",
+            "label": "gameOverText",
+            "scope": "PUBLIC",
+            "components": [],
+            "x": 418,
+            "y": 190,
+            "originX": 0.5,
+            "originY": 0.5,
+            "visible": false,
+            "text": "GAME OVER",
+            "fixedWidth": 500,
+            "align": "justify",
+            "fontFamily": "Arial",
+            "fontSize": "75px",
+            "color": "#000000ff",
+            "stroke": "#ffffffff",
+            "strokeThickness": 5,
+            "shadow.color": "#ffffffff"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

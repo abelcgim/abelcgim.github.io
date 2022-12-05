@@ -1,0 +1,95 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/back.png",
+                "type": "image",
+                "key": "back"
+            },
+            {
+                "url": "assets/black.png",
+                "type": "image",
+                "key": "black"
+            },
+            {
+                "url": "assets/boringLogo.jpg",
+                "type": "image",
+                "key": "boringLogo"
+            },
+            {
+                "url": "assets/checked.png",
+                "type": "image",
+                "key": "checked"
+            },
+            {
+                "url": "assets/highscore.png",
+                "type": "image",
+                "key": "highscore"
+            },
+            {
+                "url": "assets/highscore2.png",
+                "type": "image",
+                "key": "highscore2"
+            },
+            {
+                "url": "assets/ikeasmall.png",
+                "type": "image",
+                "key": "ikeasmall"
+            },
+            {
+                "url": "assets/input.html",
+                "type": "html",
+                "key": "input"
+            },
+            {
+                "url": "assets/omeprazole.png",
+                "type": "image",
+                "key": "omeprazole"
+            },
+            {
+                "url": "assets/pharmacy.png",
+                "type": "image",
+                "key": "pharmacy"
+            },
+            {
+                "url": "assets/pharmaPaper.png",
+                "type": "image",
+                "key": "pharmaPaper"
+            },
+            {
+                "url": [
+                    "assets/pharmasound.ogg"
+                ],
+                "type": "audio",
+                "key": "pharmasound"
+            },
+            {
+                "url": "assets/retry.png",
+                "type": "image",
+                "key": "retry"
+            },
+            {
+                "url": "assets/start.png",
+                "type": "image",
+                "key": "start"
+            },
+            {
+                "url": "assets/submit.png",
+                "type": "image",
+                "key": "submit"
+            },
+            {
+                "url": "assets/unchecked.png",
+                "type": "image",
+                "key": "unchecked"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}
