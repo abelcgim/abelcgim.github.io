@@ -156,7 +156,7 @@
             "y": 217,
             "originX": 0.5,
             "originY": 0.5,
-            "text": "INSTRUCTIONS\n\nA->Move Left\nD->Move Right\nCollect Drugs\nAvoid Ikea Thingies",
+            "text": "INSTRUCTIONS\n\nHold A->Move Left\nHold D->Move Right\nCollect Drugs\nAvoid Ikea Thingies",
             "align": "center",
             "fontFamily": "Arial",
             "fontSize": "30px",

@@ -73,7 +73,7 @@ class Level extends Phaser.Scene {
 		// instructions
 		const instructions = this.add.text(396, 217, "", {});
 		instructions.setOrigin(0.5, 0.5);
-		instructions.text = "INSTRUCTIONS\n\nA->Move Left\nD->Move Right\nCollect Drugs\nAvoid Ikea Thingies";
+		instructions.text = "INSTRUCTIONS\n\nHold A->Move Left\nHold D->Move Right\nCollect Drugs\nAvoid Ikea Thingies";
 		instructions.setStyle({ "align": "center", "backgroundColor": "", "color": "#ffffffff", "fontFamily": "Arial", "fontSize": "30px", "stroke": "#4d0606ff" });
 
 		// unchecked
@@ -519,7 +519,7 @@ class Level extends Phaser.Scene {
 		this.gameOverText.setDepth(10);	
 		if (!this.sys.game.device.os.desktop){
 			var textInstructions=this.instructions.text
-			textInstructions=textInstructions.replace("A->Move Left\nD->Move Right","Tap to the left or right to move in that direction");
+			textInstructions=textInstructions.replace("Hold A->Move Left\nHold D->Move Right","Tap to the left or right to move in that direction");
 			this.velocity=7;
 			this.instructions.text=textInstructions
 		}	
