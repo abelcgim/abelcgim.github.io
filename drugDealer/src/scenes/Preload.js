@@ -23,7 +23,7 @@ class Preload extends Phaser.Scene {
 	editorCreate() {
 
 		// pharmaLoad
-		const pharmaLoad = this.add.image(396, 218, "guapen");
+		const pharmaLoad = this.add.image(396, 218, "pharmaIcon");
 		pharmaLoad.scaleX = 1.2600750625859845;
 		pharmaLoad.scaleY = 1.132724792788914;
 

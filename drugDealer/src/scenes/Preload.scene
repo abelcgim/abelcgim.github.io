@@ -17,7 +17,7 @@
             "label": "pharmaLoad",
             "components": [],
             "texture": {
-                "key": "guapen"
+                "key": "pharmaIcon"
             },
             "x": 396,
             "y": 218,
