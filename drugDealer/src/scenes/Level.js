@@ -520,7 +520,7 @@ class Level extends Phaser.Scene {
 		if (!this.sys.game.device.os.desktop){
 			var textInstructions=this.instructions.text
 			textInstructions=textInstructions.replace("Hold A->Move Left\nHold D->Move Right","Tap to the left or right to move in that direction");
-			this.velocity=7;
+			this.velocity=6;
 			this.instructions.text=textInstructions
 		}	
 		this.music = this.sound.add('theme');
