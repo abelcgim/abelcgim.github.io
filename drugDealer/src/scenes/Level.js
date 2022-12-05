@@ -520,7 +520,7 @@ class Level extends Phaser.Scene {
 		if (!this.sys.game.device.os.desktop){
 			var textInstructions=this.instructions.text
 			textInstructions=textInstructions.replace("A->Move Left\nD->Move Right","Tap to the left or right to move in that direction");
-			this.velocity=8;
+			this.velocity=7;
 			this.instructions.text=textInstructions
 		}	
 		this.music = this.sound.add('theme');
@@ -598,12 +598,12 @@ class Level extends Phaser.Scene {
 				if (this.input.activePointer.isDown) {
                     var difference=this.input.activePointer.worldX-this.pharmaPaper.getCenter().x	
 					if(difference>30) {					
-						this.pharmaPaper.x += 13;
-				        this.pharmaPaper_1.x += 13;
+						this.pharmaPaper.x += 8;
+				        this.pharmaPaper_1.x += 8;
 					}
 					else if (difference<-10) {	
-						this.pharmaPaper.x -= 13;
-						this.pharmaPaper_1.x -=13;
+						this.pharmaPaper.x -= 8;
+						this.pharmaPaper_1.x -=8;
 					}
 				}
 			}
