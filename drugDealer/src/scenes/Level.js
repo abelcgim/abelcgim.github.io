@@ -233,9 +233,9 @@ class Level extends Phaser.Scene {
 
     checkHighScore() {
 		const request = new XMLHttpRequest();
-		request.open("GET", "https://json.extendsclass.com/bin/4e10e8481a29", false);
+		request.open("GET", "https://json.extendsclass.com/bin/8315deb65db6", false);
 		request.setRequestHeader('Cache-Control', 'no-cache');
-		request.setRequestHeader("Security-key", "sadasdasfasdasdasfgdfadf");
+		request.setRequestHeader("Security-key", "cheatersHaveSmallPP");
 		request.onreadystatechange = () => {
 			if (request.readyState === XMLHttpRequest.DONE) {
 				this.highscores = JSON.parse(request.responseText);
@@ -424,9 +424,9 @@ class Level extends Phaser.Scene {
 
 		const request = new XMLHttpRequest();
 		this.highscoreText.text = "HIGHSCORES (TOP 15)\n"
-		request.open("GET", "https://json.extendsclass.com/bin/4e10e8481a29", false);
+		request.open("GET", "https://json.extendsclass.com/bin/8315deb65db6", false);
 		request.setRequestHeader('Cache-Control', 'no-cache');
-		request.setRequestHeader("Security-key", "sadasdasfasdasdasfgdfadf");
+		request.setRequestHeader("Security-key", "cheatersHaveSmallPP");
 		request.onreadystatechange = () => {
 			if (request.readyState === XMLHttpRequest.DONE) {
 				this.highscores = JSON.parse(request.responseText);
@@ -473,8 +473,8 @@ class Level extends Phaser.Scene {
 		var namePlayer=document.getElementById("nameInput").value
 		if (namePlayer!="") {
 			const request = new XMLHttpRequest();
-			request.open("PUT", "https://json.extendsclass.com/bin/4e10e8481a29", false);
-			request.setRequestHeader("Security-key", "sadasdasfasdasdasfgdfadf");
+			request.open("PUT", "https://json.extendsclass.com/bin/8315deb65db6", false);
+			request.setRequestHeader("Security-key", "cheatersHaveSmallPP");
 			request.onreadystatechange = () => {
 			};
 
