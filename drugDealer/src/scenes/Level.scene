@@ -361,18 +361,18 @@
         },
         {
             "type": "Image",
-            "id": "06fc6c23-f776-4b1b-8887-f170afcb3be5",
-            "label": "cheetahScore",
+            "id": "db87f623-0a46-441c-a886-ce14cc6a7ca0",
+            "label": "cheetahS",
             "scope": "PUBLIC",
             "components": [],
             "texture": {
-                "key": "cheetahScore"
+                "key": "cheetahS"
             },
-            "x": 640,
-            "y": 156,
-            "scaleX": 0.7240979434760085,
-            "scaleY": 1.0250463688370453,
-            "angle": 36,
+            "x": 599,
+            "y": 87,
+            "scaleX": 0.5556408882341394,
+            "scaleY": 0.9205140962330534,
+            "angle": 26,
             "visible": false
         }
     ],
