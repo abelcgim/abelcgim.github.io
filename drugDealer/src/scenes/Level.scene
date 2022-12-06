@@ -358,6 +358,22 @@
             "stroke": "#ffffffff",
             "strokeThickness": 5,
             "shadow.color": "#ffffffff"
+        },
+        {
+            "type": "Image",
+            "id": "06fc6c23-f776-4b1b-8887-f170afcb3be5",
+            "label": "cheetahScore",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "cheetahScore"
+            },
+            "x": 640,
+            "y": 156,
+            "scaleX": 0.7240979434760085,
+            "scaleY": 1.0250463688370453,
+            "angle": 36,
+            "visible": false
         }
     ],
     "plainObjects": [],

@@ -146,6 +146,13 @@ class Level extends Phaser.Scene {
 		gameOverText.text = "GAME OVER";
 		gameOverText.setStyle({ "align": "justify", "color": "#000000ff", "fixedWidth":500,"fontFamily": "Arial", "fontSize": "75px", "stroke": "#ffffffff", "strokeThickness":5,"shadow.color": "#ffffffff" });
 
+		// cheetahScore
+		const cheetahScore = this.add.image(640, 156, "cheetahScore");
+		cheetahScore.scaleX = 0.7240979434760085;
+		cheetahScore.scaleY = 1.0250463688370453;
+		cheetahScore.angle = 36;
+		cheetahScore.visible = false;
+
 		this.pharmacy = pharmacy;
 		this.pharmaPaper_1 = pharmaPaper_1;
 		this.pharmaPaper = pharmaPaper;
@@ -167,6 +174,7 @@ class Level extends Phaser.Scene {
 		this.submitButton = submitButton;
 		this.scoreSubmitted = scoreSubmitted;
 		this.gameOverText = gameOverText;
+		this.cheetahScore = cheetahScore;
 
 		this.events.emit("scene-awake");
 	}
@@ -213,6 +221,8 @@ class Level extends Phaser.Scene {
 	scoreSubmitted;
 	/** @type {Phaser.GameObjects.Text} */
 	gameOverText;
+	/** @type {Phaser.GameObjects.Image} */
+	cheetahScore;
 
 	/* START-USER-CODE */
     counter=0;
@@ -272,6 +282,7 @@ class Level extends Phaser.Scene {
 		        this.submitButton.visible = true;
 			}
 		}
+		this.cheetahScore.visible=false;
 
 	}
 
@@ -417,7 +428,8 @@ class Level extends Phaser.Scene {
 
 	viewHighscores() {
 		this.backButton.visible=true;
-		this.highscoreText.visible=true;		
+		this.highscoreText.visible=true;
+        this.cheetahScore.visible=true;		
 		this.instructions.visible=false;	
         this.highscoresButton.visible=false;
         this.startButton.visible=false;		
@@ -445,7 +457,7 @@ class Level extends Phaser.Scene {
 		request.send();	
 	}
 
-    viewScoresOpposite() {
+    viewScoresOpposite() {	
 		this.pharmacy.visible=!this.pharmacy.visible;
 		this.black.visible=!this.black.visible;
 		this.gameOverText.visible=!this.gameOverText.visible;
