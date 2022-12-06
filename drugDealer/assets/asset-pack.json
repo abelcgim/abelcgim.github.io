@@ -22,6 +22,11 @@
                 "key": "checked"
             },
             {
+                "url": "assets/cheetah.png",
+                "type": "image",
+                "key": "cheetah"
+            },
+            {
                 "url": "assets/cheetahScore.png",
                 "type": "image",
                 "key": "cheetahScore"
