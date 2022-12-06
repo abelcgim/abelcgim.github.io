@@ -50,10 +50,10 @@ class Preload extends Phaser.Scene {
 		this.editorPreload();
 
 		this.load.audio('theme', [
-				'assets/pharmasound.ogg'
+				'assets/pharmasound.mp3'
 		]);
 		this.load.audio('fml', [
-				'assets/fml.ogg'
+				'assets/fml.mp3'
 		]);
 
 		this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("Level"));
