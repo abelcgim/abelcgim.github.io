@@ -545,7 +545,7 @@ class Level extends Phaser.Scene {
 	update() {
 		if (this.updateGame===true && !this.gameOverScreen) {
 			this.counter++;
-			var difficultyAdd=this.counter / 2000
+			var difficultyAdd=this.counter / 2500
 			var randomX;
 			var randomAngle;
 			var collect = ["omeprazole"];
