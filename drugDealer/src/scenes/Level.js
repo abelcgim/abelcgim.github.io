@@ -513,7 +513,7 @@ class Level extends Phaser.Scene {
 	// Write more your code here
 	create() {		
 		this.editorCreate();
-		this.inputName=this.add.dom(315, 251).createFromCache('submitScore');
+		this.inputName=this.add.dom(315, 251).createFromHTML('<input id="nameInput" type="text" name="nameField" placeholder="Enter your name" maxlength="30" style="width: 245px;font-size: 32px">');
 		this.inputName.visible=false;
         this.textOme.setDepth(10);
 		this.gameOverText.setDepth(10);	

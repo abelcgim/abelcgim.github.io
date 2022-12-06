@@ -56,8 +56,6 @@ class Preload extends Phaser.Scene {
 				'assets/fml.ogg'
 		]);
 
-		this.load.html('submitScore', 'assets/input.html');
-
 		this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("Level"));
 	}
 
