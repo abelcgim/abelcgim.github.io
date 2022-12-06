@@ -216,7 +216,7 @@ class Level extends Phaser.Scene {
 
 	/* START-USER-CODE */
     counter=0;
-	velocity=10;
+	velocity=9;
 	omeprazols=0;
 
 	ikea1;
@@ -545,7 +545,7 @@ class Level extends Phaser.Scene {
 	update() {
 		if (this.updateGame===true && !this.gameOverScreen) {
 			this.counter++;
-			var difficultyAdd=this.counter / 1000
+			var difficultyAdd=this.counter / 1500
 			var randomX;
 			var randomAngle;
 			var collect = ["omeprazole"];
