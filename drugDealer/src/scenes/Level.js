@@ -151,6 +151,7 @@ class Level extends Phaser.Scene {
 		cheetahS.scaleX = 0.5556408882341394;
 		cheetahS.scaleY = 0.9205140962330534;
 		cheetahS.angle = 26;
+		cheetahS.visible = false;
 
 		// cheetahText
 		const cheetahText = this.add.text(70, 142, "", {});

@@ -372,7 +372,8 @@
             "y": 125,
             "scaleX": 0.5556408882341394,
             "scaleY": 0.9205140962330534,
-            "angle": 26
+            "angle": 26,
+            "visible": false
         },
         {
             "type": "Text",
