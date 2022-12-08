@@ -380,8 +380,8 @@
             "label": "cheetahText",
             "scope": "PUBLIC",
             "components": [],
-            "x": 81,
-            "y": 180,
+            "x": 70,
+            "y": 142,
             "originX": 0.5,
             "originY": 0.5,
             "visible": false,
@@ -402,11 +402,12 @@
             "texture": {
                 "key": "arrow"
             },
-            "x": 208,
-            "y": 100,
-            "scaleX": 0.09174187180689479,
-            "scaleY": 0.07795696874812069,
-            "angle": 164
+            "x": 215,
+            "y": 85,
+            "scaleX": 0.06212696727012948,
+            "scaleY": 0.06357219240090252,
+            "angle": -173,
+            "visible": false
         },
         {
             "type": "Image",
@@ -417,8 +418,8 @@
             "texture": {
                 "key": "susge"
             },
-            "x": 171,
-            "y": 147,
+            "x": 157,
+            "y": 107,
             "scaleX": 0.4960675740024527,
             "scaleY": 0.5533599570585965,
             "visible": false

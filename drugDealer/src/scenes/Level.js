@@ -153,20 +153,21 @@ class Level extends Phaser.Scene {
 		cheetahS.angle = 26;
 
 		// cheetahText
-		const cheetahText = this.add.text(81, 180, "", {});
+		const cheetahText = this.add.text(70, 142, "", {});
 		cheetahText.setOrigin(0.5, 0.5);
 		cheetahText.visible = false;
 		cheetahText.text = "sus score\n";
 		cheetahText.setStyle({ "align": "center", "backgroundColor": "", "color": "#ffffffff", "fontFamily": "Arial", "fontSize": "25px", "stroke": "#4d0606ff" });
 
 		// arrow
-		const arrow = this.add.image(208, 100, "arrow");
-		arrow.scaleX = 0.09174187180689479;
-		arrow.scaleY = 0.07795696874812069;
-		arrow.angle = 164;
+		const arrow = this.add.image(215, 85, "arrow");
+		arrow.scaleX = 0.06212696727012948;
+		arrow.scaleY = 0.06357219240090252;
+		arrow.angle = -173;
+		arrow.visible = false;
 
 		// susge
-		const susge = this.add.image(171, 147, "susge");
+		const susge = this.add.image(157, 107, "susge");
 		susge.scaleX = 0.4960675740024527;
 		susge.scaleY = 0.5533599570585965;
 		susge.visible = false;
