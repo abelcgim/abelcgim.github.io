@@ -99,6 +99,11 @@
                 "key": "submit"
             },
             {
+                "url": "assets/susge.png",
+                "type": "image",
+                "key": "susge"
+            },
+            {
                 "url": "assets/unchecked.png",
                 "type": "image",
                 "key": "unchecked"

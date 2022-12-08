@@ -380,12 +380,12 @@
             "label": "cheetahText",
             "scope": "PUBLIC",
             "components": [],
-            "x": 141,
-            "y": 159,
+            "x": 81,
+            "y": 180,
             "originX": 0.5,
             "originY": 0.5,
             "visible": false,
-            "text": "another cheetah\n",
+            "text": "sus score\n",
             "align": "center",
             "fontFamily": "Arial",
             "fontSize": "25px",
@@ -406,7 +406,21 @@
             "y": 100,
             "scaleX": 0.09174187180689479,
             "scaleY": 0.07795696874812069,
-            "angle": 164,
+            "angle": 164
+        },
+        {
+            "type": "Image",
+            "id": "526b6d99-9c91-448e-b959-f190eab44fd0",
+            "label": "susge",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "susge"
+            },
+            "x": 171,
+            "y": 147,
+            "scaleX": 0.4960675740024527,
+            "scaleY": 0.5533599570585965,
             "visible": false
         }
     ],

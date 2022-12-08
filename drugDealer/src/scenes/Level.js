@@ -153,10 +153,10 @@ class Level extends Phaser.Scene {
 		cheetahS.angle = 26;
 
 		// cheetahText
-		const cheetahText = this.add.text(141, 159, "", {});
+		const cheetahText = this.add.text(81, 180, "", {});
 		cheetahText.setOrigin(0.5, 0.5);
 		cheetahText.visible = false;
-		cheetahText.text = "another cheetah\n";
+		cheetahText.text = "sus score\n";
 		cheetahText.setStyle({ "align": "center", "backgroundColor": "", "color": "#ffffffff", "fontFamily": "Arial", "fontSize": "25px", "stroke": "#4d0606ff" });
 
 		// arrow
@@ -164,7 +164,12 @@ class Level extends Phaser.Scene {
 		arrow.scaleX = 0.09174187180689479;
 		arrow.scaleY = 0.07795696874812069;
 		arrow.angle = 164;
-		arrow.visible = false;
+
+		// susge
+		const susge = this.add.image(171, 147, "susge");
+		susge.scaleX = 0.4960675740024527;
+		susge.scaleY = 0.5533599570585965;
+		susge.visible = false;
 
 		this.pharmacy = pharmacy;
 		this.pharmaPaper_1 = pharmaPaper_1;
@@ -190,6 +195,7 @@ class Level extends Phaser.Scene {
 		this.cheetahS = cheetahS;
 		this.cheetahText = cheetahText;
 		this.arrow = arrow;
+		this.susge = susge;
 
 		this.events.emit("scene-awake");
 	}
@@ -242,6 +248,8 @@ class Level extends Phaser.Scene {
 	cheetahText;
 	/** @type {Phaser.GameObjects.Image} */
 	arrow;
+	/** @type {Phaser.GameObjects.Image} */
+	susge;
 
 	/* START-USER-CODE */
     counter=0;
@@ -303,7 +311,8 @@ class Level extends Phaser.Scene {
 		}
 		this.cheetahS.visible=false;
 		this.cheetahText.visible=false;
-        this.arrow.visible=false;	
+        this.arrow.visible=false;
+        this.susge.visible=false;			
 
 	}
 
@@ -452,7 +461,8 @@ class Level extends Phaser.Scene {
 		this.highscoreText.visible=true;
         this.cheetahS.visible=true;		
 		this.cheetahText.visible=true;
-        this.arrow.visible=true;			
+        this.arrow.visible=true;
+        this.susge.visible=true;			
 		this.instructions.visible=false;	
         this.highscoresButton.visible=false;
         this.startButton.visible=false;		
