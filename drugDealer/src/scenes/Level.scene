@@ -262,7 +262,7 @@
             "originX": 0.5,
             "originY": 0.5,
             "visible": false,
-            "text": "HIGHSCORES (TOP 15)\n\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25",
+            "text": "HIGHSCORES (TOP 15)\n",
             "align": "center",
             "fontFamily": "Arial",
             "fontSize": "25px",
@@ -368,11 +368,45 @@
             "texture": {
                 "key": "cheetahS"
             },
-            "x": 599,
-            "y": 87,
+            "x": 634,
+            "y": 125,
             "scaleX": 0.5556408882341394,
             "scaleY": 0.9205140962330534,
-            "angle": 26,
+            "angle": 26
+        },
+        {
+            "type": "Text",
+            "id": "1d2bf4e6-266c-4a5b-81b7-d180cdf91461",
+            "label": "cheetahText",
+            "scope": "PUBLIC",
+            "components": [],
+            "x": 141,
+            "y": 159,
+            "originX": 0.5,
+            "originY": 0.5,
+            "visible": false,
+            "text": "another cheetah\n",
+            "align": "center",
+            "fontFamily": "Arial",
+            "fontSize": "25px",
+            "color": "#ffffffff",
+            "stroke": "#4d0606ff",
+            "backgroundColor": ""
+        },
+        {
+            "type": "Image",
+            "id": "bff73e3b-e8fc-4fd1-8e98-450322b70373",
+            "label": "arrow",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "arrow"
+            },
+            "x": 208,
+            "y": 100,
+            "scaleX": 0.09174187180689479,
+            "scaleY": 0.07795696874812069,
+            "angle": 164,
             "visible": false
         }
     ],

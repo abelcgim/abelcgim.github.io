@@ -2,6 +2,11 @@
     "section1": {
         "files": [
             {
+                "url": "assets/arrow.png",
+                "type": "image",
+                "key": "arrow"
+            },
+            {
                 "url": "assets/back.png",
                 "type": "image",
                 "key": "back"
