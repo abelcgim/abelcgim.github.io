@@ -113,7 +113,7 @@ class Level extends Phaser.Scene {
 		const highscoreText = this.add.text(394, 248, "", {});
 		highscoreText.setOrigin(0.5, 0.5);
 		highscoreText.visible = false;
-		highscoreText.text = "HIGHSCORES (TOP 15)\n\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25\nhi trixi: 25";
+		highscoreText.text = "HIGHSCORES (TOP 15)\n";
 		highscoreText.setStyle({ "align": "center", "backgroundColor": "", "color": "#ffffffff", "fontFamily": "Arial", "fontSize": "25px", "stroke": "#4d0606ff" });
 
 		// backButton
@@ -147,11 +147,24 @@ class Level extends Phaser.Scene {
 		gameOverText.setStyle({ "align": "justify", "color": "#000000ff", "fixedWidth":500,"fontFamily": "Arial", "fontSize": "75px", "stroke": "#ffffffff", "strokeThickness":5,"shadow.color": "#ffffffff" });
 
 		// cheetahS
-		const cheetahS = this.add.image(599, 87, "cheetahS");
+		const cheetahS = this.add.image(634, 125, "cheetahS");
 		cheetahS.scaleX = 0.5556408882341394;
 		cheetahS.scaleY = 0.9205140962330534;
 		cheetahS.angle = 26;
-		cheetahS.visible = false;
+
+		// cheetahText
+		const cheetahText = this.add.text(141, 159, "", {});
+		cheetahText.setOrigin(0.5, 0.5);
+		cheetahText.visible = false;
+		cheetahText.text = "another cheetah\n";
+		cheetahText.setStyle({ "align": "center", "backgroundColor": "", "color": "#ffffffff", "fontFamily": "Arial", "fontSize": "25px", "stroke": "#4d0606ff" });
+
+		// arrow
+		const arrow = this.add.image(208, 100, "arrow");
+		arrow.scaleX = 0.09174187180689479;
+		arrow.scaleY = 0.07795696874812069;
+		arrow.angle = 164;
+		arrow.visible = false;
 
 		this.pharmacy = pharmacy;
 		this.pharmaPaper_1 = pharmaPaper_1;
@@ -175,6 +188,8 @@ class Level extends Phaser.Scene {
 		this.scoreSubmitted = scoreSubmitted;
 		this.gameOverText = gameOverText;
 		this.cheetahS = cheetahS;
+		this.cheetahText = cheetahText;
+		this.arrow = arrow;
 
 		this.events.emit("scene-awake");
 	}
@@ -223,6 +238,10 @@ class Level extends Phaser.Scene {
 	gameOverText;
 	/** @type {Phaser.GameObjects.Image} */
 	cheetahS;
+	/** @type {Phaser.GameObjects.Text} */
+	cheetahText;
+	/** @type {Phaser.GameObjects.Image} */
+	arrow;
 
 	/* START-USER-CODE */
     counter=0;
@@ -283,6 +302,8 @@ class Level extends Phaser.Scene {
 			}
 		}
 		this.cheetahS.visible=false;
+		this.cheetahText.visible=false;
+        this.arrow.visible=false;	
 
 	}
 
@@ -430,6 +451,8 @@ class Level extends Phaser.Scene {
 		this.backButton.visible=true;
 		this.highscoreText.visible=true;
         this.cheetahS.visible=true;		
+		this.cheetahText.visible=true;
+        this.arrow.visible=true;			
 		this.instructions.visible=false;	
         this.highscoresButton.visible=false;
         this.startButton.visible=false;		
