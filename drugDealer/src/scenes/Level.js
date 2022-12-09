@@ -312,9 +312,9 @@ class Level extends Phaser.Scene {
 			}
 		}
 		this.cheetahS.visible=false;
-		this.cheetahText.visible=false;
-        this.arrow.visible=false;
-        this.susge.visible=false;			
+		//this.cheetahText.visible=false;
+        //this.arrow.visible=false;
+        //this.susge.visible=false;			
 
 	}
 
@@ -462,9 +462,9 @@ class Level extends Phaser.Scene {
 		this.backButton.visible=true;
 		this.highscoreText.visible=true;
         this.cheetahS.visible=true;		
-		this.cheetahText.visible=true;
-        this.arrow.visible=true;
-        this.susge.visible=true;			
+		//this.cheetahText.visible=true;
+        //this.arrow.visible=true;
+        //this.susge.visible=true;			
 		this.instructions.visible=false;	
         this.highscoresButton.visible=false;
         this.startButton.visible=false;		
