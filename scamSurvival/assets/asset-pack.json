@@ -1,0 +1,150 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/arrow.png",
+                "type": "image",
+                "key": "arrow"
+            },
+            {
+                "url": "assets/back.png",
+                "type": "image",
+                "key": "back"
+            },
+            {
+                "url": "assets/bg.png",
+                "type": "image",
+                "key": "bg"
+            },
+            {
+                "url": "assets/black.png",
+                "type": "image",
+                "key": "black"
+            },
+            {
+                "url": "assets/boringLogo.jpg",
+                "type": "image",
+                "key": "boringLogo"
+            },
+            {
+                "url": "assets/calculator.png",
+                "type": "image",
+                "key": "calculator"
+            },
+            {
+                "url": "assets/checked.png",
+                "type": "image",
+                "key": "checked"
+            },
+            {
+                "url": "assets/cheetahS.png",
+                "type": "image",
+                "key": "cheetahS"
+            },
+            {
+                "url": "assets/highscore.png",
+                "type": "image",
+                "key": "highscore"
+            },
+            {
+                "url": "assets/highscore2.png",
+                "type": "image",
+                "key": "highscore2"
+            },
+            {
+                "url": "assets/ibuprofen.png",
+                "type": "image",
+                "key": "ibuprofen"
+            },
+            {
+                "url": "assets/ikeasmall.png",
+                "type": "image",
+                "key": "ikeasmall"
+            },
+            {
+                "url": "assets/input.html",
+                "type": "html",
+                "key": "input"
+            },
+            {
+                "url": "assets/omeprazole.png",
+                "type": "image",
+                "key": "omeprazole"
+            },
+            {
+                "url": "assets/paracetamol.png",
+                "type": "image",
+                "key": "paracetamol"
+            },
+            {
+                "url": "assets/pharmacy.png",
+                "type": "image",
+                "key": "pharmacy"
+            },
+            {
+                "url": "assets/pharmaPaper.png",
+                "type": "image",
+                "key": "pharmaPaper"
+            },
+            {
+                "url": [
+                    "assets/pharmasound.mp3"
+                ],
+                "type": "audio",
+                "key": "pharmasound"
+            },
+            {
+                "url": "assets/rand10.jpg",
+                "type": "image",
+                "key": "rand10"
+            },
+            {
+                "url": "assets/rand100.jpg",
+                "type": "image",
+                "key": "rand100"
+            },
+            {
+                "url": "assets/rand20.jpg",
+                "type": "image",
+                "key": "rand20"
+            },
+            {
+                "url": "assets/retry.png",
+                "type": "image",
+                "key": "retry"
+            },
+            {
+                "url": "assets/shako.png",
+                "type": "image",
+                "key": "shako"
+            },
+            {
+                "url": "assets/start.png",
+                "type": "image",
+                "key": "start"
+            },
+            {
+                "url": "assets/submit.png",
+                "type": "image",
+                "key": "submit"
+            },
+            {
+                "url": "assets/susge.png",
+                "type": "image",
+                "key": "susge"
+            },
+            {
+                "url": "assets/unchecked.png",
+                "type": "image",
+                "key": "unchecked"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}
