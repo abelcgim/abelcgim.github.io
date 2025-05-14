@@ -458,7 +458,7 @@ class Level extends Phaser.Scene {
 	viewHighscores() {
 		this.backButton.visible=true;
 		this.highscoreText.visible=true;
-        this.cheetahS.visible=true;		
+        this.cheetahS.visible=false;		
 		//this.cheetahText.visible=true;
         //this.arrow.visible=true;
         //this.susge.visible=true;			
